@@ -1,6 +1,9 @@
 class ApplicationController < ActionController::API
+  
+
   before_action :snake_case_params
 
+ 
 
   def test
     if params.has_key?(:login)
@@ -8,52 +11,53 @@ class ApplicationController < ActionController::API
     elsif params.has_key?(:logout)
       logout!
     end
-  
+
     if current_user
-      render json: { user: current_user.slice('id', 'username', 'session_token') }
+      render json: { user: current_user.slice("id", "username", "session_token") }
     else
-      render json: ['No current user']
+      render json: ["No current user"]
     end
   end
-
-
 
   #CRRLLL
   def current_user
     @current_user ||= User.find_by_session_token(session[:session_token])
-end
+  end
 
-def require_logged_in
+  def require_logged_in
     if !logged_in?
-        render json: { message: 'Unauthorized' }, status: :unauthorized
+      render json: { message: "Unauthorized" }, status: :unauthorized
     end
-end
+  end
 
-def require_logged_out
+  def require_logged_out
     if logged_in?
-        render json: { message: 'Unauthorized' }, status: :unauthorized
+      render json: { message: "Unauthorized" }, status: :unauthorized
     end
-end
+  end
 
-def login!(user)
+  def login!(user)
     session[:session_token] = user.reset_session_token!
     @current_user = user
-end
+  end
 
-def logged_in?
+  def logged_in?
     !!current_user
-end
+  end
 
-def logout!
+  def logout!
     current_user.reset_session_token!
     session[:session_token] = nil
     @current_user = nil
-end
-
+  end
 
   private
 
   def snake_case_params
     params.deep_transform_keys!(&:underscore)
   end
+
+  
+
+ 
 end

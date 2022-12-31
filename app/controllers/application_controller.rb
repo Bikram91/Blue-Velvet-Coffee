@@ -1,9 +1,6 @@
 class ApplicationController < ActionController::API
-  
-
   before_action :snake_case_params
 
- 
 
   def test
     if params.has_key?(:login)
@@ -56,8 +53,4 @@ class ApplicationController < ActionController::API
   def snake_case_params
     params.deep_transform_keys!(&:underscore)
   end
-
-  
-
- 
 end

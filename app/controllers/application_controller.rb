@@ -8,19 +8,19 @@ class ApplicationController < ActionController::API
   rescue_from StandardError, with: :unhandled_error
   rescue_from ActionController::InvalidAuthenticityToken, with: :invalid_authenticity_token
 
-  def test
-    if params.has_key?(:login)
-      login!(User.first)
-    elsif params.has_key?(:logout)
-      logout!
-    end
+  # def test
+  #   if params.has_key?(:login)
+  #     login!(User.first)
+  #   elsif params.has_key?(:logout)
+  #     logout!
+  #   end
 
-    if current_user
-      render json: { user: current_user.slice("id", "username", "session_token") }
-    else
-      render json: ["No current user"]
-    end
-  end
+  #   if current_user
+  #     render json: { user: current_user.slice("id", "username", "session_token") }
+  #   else
+  #     render json: ["No current user"]
+  #   end
+  # end
 
   #CRRLLL
   def current_user

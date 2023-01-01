@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 const configureStore = (preloadedState = {}) => (
-    legacy_createStore(rootReducer, preloadedState, enhancer)
+    createStore(rootReducer, preloadedState, enhancer)
 )
 
 export default configureStore;

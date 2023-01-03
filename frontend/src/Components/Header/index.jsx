@@ -1,12 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import * as sessionActions from "../../store/session";
+import {Link } from "react-router-dom";
+import "./Header.css"
+// import loginicon from '../../Assets/Header/account.svg';
+import LoginFormModal from "../account_forms/LoginModal";
+// import SignUpFormModal from "../account_forms/SignUpFormModal";
+// import account from '../../Assets/Header/account.svg';
+
+
 
 const Header = () => {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);
-  console.log(sessionUser);
+
 
   const logoutUser = (e) => {
     e.preventDefault();
@@ -23,20 +31,31 @@ const Header = () => {
     );
   } else {
     sessionLinks = (
-      <>
-        <NavLink to="/login">Login In</NavLink>
-        <NavLink to="/signup">Sign Up</NavLink>
-      </>
+      <div>
+        
+        
+        <Link to="/login" >
+          <LoginFormModal />
+        </Link> 
+        
+
+     
+      </div>
     );
   }
 
+  
   return (
-    <ul>
-      <li>
-        <NavLink to="/">Home</NavLink>
-        {sessionLinks}
-      </li>
-    </ul>
+    <header>
+        <div className="icon">
+            <Link to="/">Home</Link>
+       
+        <div className="login">
+            {sessionLinks}
+            
+        </div>
+        </div>
+    </header>
   );
 };
 

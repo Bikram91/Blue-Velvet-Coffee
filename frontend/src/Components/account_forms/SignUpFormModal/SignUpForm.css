@@ -1,0 +1,57 @@
+/* .signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+}
+
+.signup-field {
+    border: 0;
+    box-shadow: 3pt 3pt 5pt 0.5pt #D3D3D3;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 15px;
+    font-family: inherit;
+    padding: 15px;
+    margin: 10px;
+    width: 60%;
+}
+
+.signup-field::-webkit-input-placeholder {
+    color: black;
+} */
+
+.signup-slider{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.signup-slider > form{
+    width: 500px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-field {
+    text-align: center;
+    font-size: 16px;
+    font-family: inherit;
+    border-radius: 0;
+    border: solid 1px black;
+    box-shadow: 2px 3px #0000005e;
+    padding: 15px;
+    margin: 10px;
+    width: 70%;
+}
+
+.signup-field::-webkit-input-placeholder {
+    color: black;
+}

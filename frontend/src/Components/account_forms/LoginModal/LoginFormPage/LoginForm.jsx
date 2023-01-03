@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 
 import { useDispatch, useSelector } from "react-redux";
-import * as sessionActions from "../../../store/session";
+import * as sessionActions from "../../../../store/session";
 import { Redirect, Link } from "react-router-dom";
+import './LoginFormPage.css'
+import SignUpFormModal from "../../SignUpFormModal";
 
 const LoginForm = () => {
   const dispatch = useDispatch();
@@ -12,7 +14,7 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
 
-  if (sessionUser) return <Redirect to="/" />;
+  if (sessionUser) return <Redirect to="/account" />;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,38 +41,19 @@ const LoginForm = () => {
   }
 
   return (
-    <>
+    <div className="login-slider">
     <form onSubmit={handleSubmit}>
+      <h2>Sign In</h2>
       <ul>
-        {errors.map((error) => (
-          <li key={error}>{error}</li>
-        ))}
-      </ul>
-
-      <label>
-        Email
-        <input
-          type="text"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-      </label>
-
-      <label>
-        Password
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-      </label>
-
-      <button type="submit">Log In</button>
-      <Link to="#" onClick= {handleDemoLogin}>Login as Demo User</Link>
+        {errors.map((error) => (<li key={error}>{error}</li>))}
+      </ul> 
+        <input className="login-field" type="text" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} required/>
+        <input className="login-field" type="password" value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} required/>
+        <button className="red-btn" type="submit">Log In</button>
+        <Link className="demo-field" to="#" onClick= {handleDemoLogin}>Login as Demo User</Link>
+          <Link to="/signup"><SignUpFormModal/></Link>
     </form>
-    </>
+    </div>
   );
 };
 

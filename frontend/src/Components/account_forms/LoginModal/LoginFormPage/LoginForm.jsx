@@ -50,8 +50,9 @@ const LoginForm = () => {
         <input className="login-field" type="text" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} required/>
         <input className="login-field" type="password" value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} required/>
         <button className="red-btn" type="submit">Log In</button>
-        <Link className="demo-field" to="#" onClick= {handleDemoLogin}>Login as Demo User</Link>
-          <Link to="/signup"><SignUpFormModal/></Link>
+        <Link to="#" id="demo-field" onClick= {handleDemoLogin}>Login as Demo User</Link>
+          <Link to="#"><SignUpFormModal/></Link>
+
     </form>
     </div>
   );

@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: Blue_Velvet_Coffee_production
-  username: Blue_Velvet_Coffee
-  password: <%= ENV["BLUE_VELVET_COFFEE_DATABASE_PASSWORD"] %>
+    url: <%= ENV['DATABASE_URL'] %>

@@ -1,6 +1,6 @@
 databases: 
   - name: bluevelvetcoffee
-    user: bluevelvetcoffee
+    user: blue_velvet_coffee
     plan: free
     region: oregon
 

@@ -5,6 +5,7 @@ import * as sessionActions from "../../../../store/session";
 import { Redirect, Link } from "react-router-dom";
 import './LoginFormPage.css'
 import SignUpFormModal from "../../SignUpFormModal";
+import { Modal } from "../../../../context/Modal";
 
 const LoginForm = () => {
   const dispatch = useDispatch();
@@ -13,6 +14,7 @@ const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
+  // const [showModal, setShowModal] = useState(false);
 
   if (sessionUser) return <Redirect to="/account" />;
 
@@ -51,6 +53,7 @@ const LoginForm = () => {
         <input className="login-field" type="password" value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} required/>
         <button className="red-btn" type="submit">Log In</button>
         <Link to="#" id="demo-field" onClick= {handleDemoLogin}>Login as Demo User</Link>
+          
           <Link to="#"><SignUpFormModal/></Link>
 
     </form>

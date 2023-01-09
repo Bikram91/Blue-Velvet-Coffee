@@ -14,8 +14,14 @@
 #
 
 class Product < ApplicationRecord
-    validates :name, :category, :description, :price, presence: true
+  validates :name, :category, :description, :price, presence: true
 
-    has_many_attached :photos
+  has_many :carts,
+           foreign_key: :product_id,
+           class_name: :Cart
+
+  has_many :users,
+           through: :carts
+
+  has_many_attached :photos
 end
-

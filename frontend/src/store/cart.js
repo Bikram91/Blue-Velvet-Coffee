@@ -4,7 +4,7 @@ const ADD_ITEMS = 'cartItem/ADD_ITEMS';
 const ADD_ITEM = 'cartItem/ADD_ITEM';
 const REMOVE_ITEM = 'cartItem/REMOVE_ITEM';
 
-// ACTIONS
+
 export const addItems = items => ({
   type: ADD_ITEMS,
   items
@@ -20,13 +20,12 @@ export const removeItem = itemId => ({
   itemId
 })
 
-// SELECTORS
+
 export const loadCartItems = state => {
   return state.cartItems ? Object.values(state.cartItems) : [];
 }
 
 
-// THUNK
 export const fetchCartItems = (userId) => async dispatch => {
   const res = await csrfFetch(`/api/cart_items?userId=${userId}`);
 
@@ -78,8 +77,6 @@ export const removeCartItem = (cartItemId) => async dispatch => {
   return res;
 }
 
-
-// REDUCERS
 const cartItemReducer = (state = {}, action) => {
   Object.freeze(state);
 
@@ -87,7 +84,6 @@ const cartItemReducer = (state = {}, action) => {
     case ADD_ITEMS:
       return action.items
     case ADD_ITEM:
-      // const {id} = action.item;
       return {...state, [action.item.id]: action.item};
     case REMOVE_ITEM:
       const nextState = {...state}

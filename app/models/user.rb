@@ -19,6 +19,13 @@ class User < ApplicationRecord
 
   before_validation :ensure_session_token
 
+  has_many :carts,
+           class_name: :Cart,
+           foreign_key: :customer_id
+
+  has_many :products,
+           through: :carts
+
   def self.find_by_credentials(email, password)
     user = User.find_by(email: email)
     if user&.authenticate(password)

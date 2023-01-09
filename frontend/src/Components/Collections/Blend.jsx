@@ -7,7 +7,7 @@ import "./Collection.css";
 const Blend = () => {
   const dispatch = useDispatch();
   const products = useSelector(loadProducts);
-  console.log(products)
+  
 
   useEffect(() => {
     dispatch(fetchCategory("Blend"));

@@ -19,7 +19,6 @@ const ProductItem = () => {
   }, [dispatch, productId]);
 
   let product = products.find((product) => product.id === productId);
-  console.log(product)
   if (!product) return null;
 
   return (

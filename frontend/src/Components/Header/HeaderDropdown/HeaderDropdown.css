@@ -1,0 +1,26 @@
+
+.category {
+    display: flex;
+    flex-direction: column;   
+}
+
+.dropdown-content {
+    position: absolute;
+    /* z-index: 30; */
+    display: none;
+    border-radius: 10px;
+    /* margin-top: 40px; */
+    top: 95%;
+    width: 40vw;
+    line-height: 30px;
+    background-color: rgb(253 251 247);
+}
+
+.dropdown-content a {
+    margin: 40px 30px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}

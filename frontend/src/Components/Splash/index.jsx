@@ -1,4 +1,5 @@
 import './Splash.css'
+import Footer from '../Footer';
 
 
 const SplashPage = () => {
@@ -19,6 +20,7 @@ const SplashPage = () => {
           </p>
         </div>
       </section>
+      <Footer/>
     </main>
   );
 };

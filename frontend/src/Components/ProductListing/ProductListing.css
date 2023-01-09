@@ -1,0 +1,31 @@
+/* .product_listing_wrapper {
+    width: 30vw
+  }
+  
+  .product_listing_wrapper img {
+    max-width: 100%;
+  }
+  
+  .product_listing_wrapper .product_listing_detail {
+    background-color: white;
+    margin-top: -15px;
+    padding: 7%;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    font-size: 1.1vw;
+  }
+  
+  .product_listing_wrapper .product_listing_detail p {
+    color: var(--grey-text);
+    font-weight: 600;
+  } */
+  
+  /* Swiper CSS */
+  /* .product_listing_wrapper .swiper {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+  
+  .product_listing_wrapper .swiper-button-prev,
+  .product_listing_wrapper .swiper-button-next {
+    transform: scale(0.5);
+    color: var(--grey-text);
+  } */

@@ -1,0 +1,23 @@
+.footer_whole{
+    display: flex;
+    align-items: center;
+    background-color: #343a40;
+    justify-content: space-between;
+    padding: 60px;
+    margin-top: 20px;
+
+}
+
+footer, footer h1, footer a {
+    color: white;
+}
+
+.fa-brands {
+    font-size: 6vh;
+    padding: 20px;
+}
+
+.shop {
+    font-size: 150%
+}
+

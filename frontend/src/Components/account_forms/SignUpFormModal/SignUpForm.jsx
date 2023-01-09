@@ -15,7 +15,7 @@ const SignUpForm = () => {
 
   if (sessionUser) return <Redirect to="/account" />;
 
-  const handleSignUp = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (password === confirmPassword) {
       setErrors([]);
@@ -41,7 +41,7 @@ const SignUpForm = () => {
 
   return (
     <div className="signup-slider">
-      <form onSubmit={handleSignUp}>
+      <form onSubmit={handleSubmit}>
         <h1>Sign Up</h1>
         <ul>{errors.map((error) => (<li key={error}>{error}</li>))}</ul>
         <input className='signup-field' type="text" value={username} placeholder="username" onChange={(e) => setUsername(e.target.value)} required/>

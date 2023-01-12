@@ -29,3 +29,25 @@
     transform: scale(0.5);
     color: var(--grey-text);
   } */
+
+  /* .product_listing_detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  } */
+
+  .img {
+    width: 400px;
+    background-color: rgb(253 251 247)
+  }
+
+  .product_listing_wrapper p{
+    display: flex;
+    
+  }
+
+  .name{
+    /* background-color: rgb(253 251 247); */
+    justify-content: center;
+  }
+

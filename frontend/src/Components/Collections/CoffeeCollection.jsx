@@ -12,7 +12,7 @@ const CoffeeCollection = () => {
   let products = useSelector(loadProducts);
 
   useEffect(() => {
-    dispatch(fetchCategory());
+    dispatch(fetchCategory("COFFEE"));
    
   }, [dispatch]);
   
@@ -22,10 +22,14 @@ const CoffeeCollection = () => {
   
   return (
     <div>
-      <div>
-      </div>
-
-      <div className="products_listings grid">
+     
+      <section className="main-image1">
+        <div className="main-text">
+          <h1  >Blue Velvet Coffee and Coffee Sets</h1>
+        </div>
+      </section>
+      {/* <div className="products_listings grid"> */}
+      <div className="product_flex">
         {products.map((product) => (
           <ProductListing key={product.id} product={product} />
         ))}

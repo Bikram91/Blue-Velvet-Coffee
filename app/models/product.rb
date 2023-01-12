@@ -16,12 +16,19 @@
 class Product < ApplicationRecord
   validates :name, :category, :description, :price, presence: true
 
-  has_many :carts,
+  has_many :cart_items,
            foreign_key: :product_id,
-           class_name: :Cart
+           class_name: :CartItem
 
   has_many :users,
            through: :carts
+
+  has_many :reviews, 
+  class_name: :Review, 
+  foreign_key: :product_id
+
+  has_many :products,
+  through: :cart_items
 
   has_many_attached :photos
 end

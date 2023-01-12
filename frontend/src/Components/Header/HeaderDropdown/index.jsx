@@ -7,7 +7,7 @@ const DropDown = () => {
         <div className="dropdown-content">
             <Link to="/collection/coffee">All Coffee</Link>
             <Link to="/collection/coffee">INSTANT</Link>
-            <Link to="/collection/coffee">DRINWARE</Link>
+            <Link to="/collection/drinkware">DRINWARE</Link>
             <Link to="/collection/coffee">BREWTOOLS</Link>
             
           

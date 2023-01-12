@@ -53,6 +53,7 @@ export const fetchCategory = category => async dispatch => {
   }
 }
 
+
 export const searchProducts = query => async dispatch => {
   const res = await csrfFetch(`/api/products/search/${query}`);
 

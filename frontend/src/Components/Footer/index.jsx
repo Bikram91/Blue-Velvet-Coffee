@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer_whole">
         <div className="">
           <NavLink exact to="/">
-            <h1>Blue Bottle Coffee</h1>
+            <h1>Blue Velvet Coffee</h1>
           </NavLink>
         </div>
 

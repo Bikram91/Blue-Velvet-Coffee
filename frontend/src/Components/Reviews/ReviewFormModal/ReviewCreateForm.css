@@ -1,0 +1,132 @@
+
+/* .review-img {
+    width: 50%;
+    max-height: 593px;
+    margin-right: 2%;
+    overflow: hidden;
+  } */
+
+  .star-checked{
+    color: #FFC831;
+  }
+
+  .star-unchecked{
+    color: grey;
+  }
+
+
+
+
+  .create-review-form-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .review-img {
+    width: 50%;
+    max-height: 593px;
+    margin-right: 2%;
+    overflow: hidden;
+  }
+  
+  .review-img img {
+    height: 593px;
+  }
+  
+  .create-review-form-right {
+    width: 50%;
+  }
+  
+  .create-review-header {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .create-review-product-name {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    padding-bottom: 15px;
+    width: 90%;
+  }
+  
+  #close-review-modal-button {
+    margin-right: 20px;
+    margin-left: 15px;
+  }
+  
+  /* .review-form input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 85%;
+    height: 25px;
+    margin-top: 5px;
+  } */
+  
+  .nickname-header-container {
+    display: flex;
+  }
+  
+  .review-subheader {
+    color: gray;
+  }
+  
+  .review-title-container, .review-body-container, .nickname-container {
+    margin-top: 15px;
+  }
+  
+  textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 85%;
+    height: 75px;
+    margin-top: 5px;
+  }
+  
+  .submit-review-button {
+    width: 85%;
+    height: 35px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #d31334;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .submit-review-button:hover {
+    background-color: #b0102b;
+  }
+  
+  .rating-buttons-container button {
+    font-size: 25px;
+  }
+  
+  .ratings-header {
+    margin-bottom: 5px;
+  }
+  
+  /* .star-checked {
+    color: black;
+  } */
+  
+  /* .star-unchecked {
+    color: rgb(177, 177, 177);
+  } */
+  
+  .review-form-errors {
+    margin-top: 5px;
+    color: #d31334;
+  }
+  
+  .review-modal-errors {
+    margin-top: 5px;
+    color: #d31334;
+  }
+
+  
+

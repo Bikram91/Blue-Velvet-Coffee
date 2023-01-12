@@ -9,11 +9,13 @@ Rails.application.routes.draw do
     resources :users, only: :create
     resource :session, only: [:show, :create, :destroy]
     # resources :products, only: [:index, :show]
-    resources :products, only: [:index, :show]
+    resources :products, only: [:index, :show] do
+      resources :reviews, only: [:index]
+    end
     get '/products/:product_name', to: 'products#show'
-    resources :cart, only: [:index, :create, :update, :destroy]
-    # get '/products/search/:query', to: 'products#search'
-    # get '/products/:product_name/reviews', to: 'reviews#index'
+    resources :cart_items, only: [:index, :create, :update, :destroy]
+    get '/products/search/:query', to: 'products#search'
+    resources :reviews, only: [:create, :update, :destroy]
   end
 
   get '*path', to: "static_pages#frontend"

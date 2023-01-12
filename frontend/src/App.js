@@ -4,7 +4,8 @@ import Header from "./Components/Header";
 import SplashPage from "./Components/Splash";
 import ProductItem from "./Components/ProductItem";
 import CoffeeCollection from "./Components/Collections/CoffeeCollection";
-
+import Drinkware from "./Components/Collections/Drinkware";
+import SearchResults from "./Components/Search/SearchResults";
 
 
 function App() {
@@ -20,7 +21,12 @@ function App() {
         </Route>
         <Route path="/collection/coffee">
           <CoffeeCollection />
-          {/* <Blend/> */}
+          </Route>
+          <Route path="/collection/drinkware">
+          <Drinkware />
+        </Route>
+        <Route exact path="/search">
+          <SearchResults />
         </Route>
       </Switch>
     </>

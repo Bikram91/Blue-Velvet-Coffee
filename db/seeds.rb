@@ -37,54 +37,6 @@
 
   puts "Creating products..."
 
-  
-
-
-  # holiday_1 = Product.create!({
-  #   name: "Winter Coffee Set",
-  #   product_type: "HOLIDAY COFFEE SET",
-  #   category: "COFFEE",
-  #   description: "We brought our winter coffees together to give you the warmth and joy we love in this season. The Winter Blend is a cozy coffee that envelops you in sweet flavors of dark chocolate and molasses. While Ethiopia Gedeb METAD Natural sparkles with floral and fruity notes that uplift and enliven. Together, they embody the best facets of the season—the comfort of dormancy and the excitement of festivities.",
-  #   price: 30,
-  # })
-
-  # holiday_1.photos.attach([
-  #   {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Holiday%202022%20Collection/Coffee/Winter%20Coffee%20Sey/Winter-Coffee-Set-M1-Hero_1.png"), filename: "Winter1.jpeg"},
-  #   {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Holiday%202022%20Collection/Coffee/Winter%20Coffee%20Sey/Winter-Coffee-Set-M3-Design-Detail1-Mobile.jpg"), filename: "Winter2.jpeg"},
-  #   {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Holiday%202022%20Collection/Coffee/Winter%20Coffee%20Sey/Winter-Coffee-Set-M4-Lifestyle-Desktop.jpg"), filename: "Winter3.jpeg"},
-  #   {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Holiday%202022%20Collection/Coffee/Winter%20Coffee%20Sey/Winter-Coffee-Set-M1-Hero_1.png"), filename: "Winter4.jpeg"}
-  # ])
-
-  # holiday_2 = Product.create!({
-  #   name: "Winter Blend and Chocolate Pairing",
-  #   product_type: "HOLIDAY COFFEE SET",
-  #   category: "COFFEE",
-  #   description: "Spoil the ones you love (including yourself) with this limited-edition holiday gift set. Our deeply fruited and comforting Winter Blend pairs beautifully with the caramelized orange and toffee notes of this 70% dark chocolate from Original Beans.Includes 6 oz of whole bean Winter Blend and a 12-pack of mini (12 g) Blue Bottle Coffee x Original Beans chocolates.",
-  #   price: 35,
-  # })
-
-  # holiday_2.photos.attach([
-  #   # {io: URI.open(""), filename: "Winter1.jpeg"},
-  #   {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Holiday%202022%20Collection/Coffee/Winter%20Coffee%20Sey/Winter-Coffee-Set-M3-Design-Detail1-Mobile.jpg"), filename: "Winter2.jpeg"},
-  #   {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Holiday%202022%20Collection/Coffee/Winter%20Coffee%20Sey/Winter-Coffee-Set-M4-Lifestyle-Desktop.jpg"), filename: "Winter3.jpeg"},
-  #   {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Holiday%202022%20Collection/Coffee/Winter%20Coffee%20Sey/Winter-Coffee-Set-M1-Hero_1.png"), filename: "Winter4.jpeg"}
-  # ])
-
-
-
-  # holiday_3 = Product.create!({
-  #   name: "Classic Blend Granola",
-  #   product_type: "HOLIDAY COFFEE SET",
-  #   category: "COFFEE",
-  #   description: "We sought to refine a familiar comfort in this breakfast staple. Baked slowly with warm spices and both maple syrup and brown sugar, our Classic Blend Granola is rich without being heavy, and has that satisfying crunch you crave. To further draw out its flavor, pair our granola with one of our Organic coffee blends.
-
-  #   Try it Blue Bottle cafe style with steamed milk, sprinkle it over yogurt, or eat it as a snack on its own—but always pair with a coffee on the side.
-    
-  #   Set contains one 12-ounce bag of whole-bean coffee and one 8-ounce bag granola.",
-  #   price: 31,
-  # })
-
-
 
   blend_1 = Product.create!({
       name: "Robusta Blend",
@@ -93,7 +45,7 @@
       description: "This blend stands to question everything the world believes about the robusta species. Through visionary coffee blending, meticulous and adaptive roasting, and explorative sourcing, we created a blend that redefines robusta. Smokey and delightfully bitter, robusta anchors this blend against bright, fruity Ethiopian arabica, and creates texture amidst the smooth sweetness of Latin American arabica.
       ",
       product_size: "HALF BAG(6OZ)",
-      price: 14,
+      price: 16,
     })
   
     blend_1.photos.attach([
@@ -131,7 +83,7 @@
   
       Giant Steps is a coffee whose chocolate notes ring constant from the first taste to the last. Straightforward and bold, this dark roast coffee wins you over with its uncomplicated comforting taste. There are no surprises here. No brightness or fruity fanfare. Just endless cocoa depth and sweet caramelization. Expect a finish that lingers pleasantly, like an aged whiskey.",
       product_size: "HALF BAG(6OZ)",
-      price: 13,
+      price: 11,
     })
 
 
@@ -150,7 +102,7 @@
       description: "Whole Bean Espresso
 
       The trick to this sturdy, crema-heavy espresso is the inclusion of organic “fine” Robusta from India. This species of coffee has zero acidity and a ton of body, giving 17ft Ceiling its backbone. Next to Hayes Valley Espresso, which is like consuming a volume of In Search of Lost Time in liquid form, 17ft Ceiling is like flipping through The New Yorker—edifying without being overly taxing.",
-      price: 13,
+      price: 14,
     })
 
     espresso_1.photos.attach([
@@ -187,7 +139,7 @@
       description: "Whole Bean Espresso
 
       Alluded to by the name, this balanced espresso makes you feel like everyone around you might break out into a musical number and you may actually join them. With wisps of citrus brightness held against a sweet backdrop of toffee and brown sugar, this espresso is not too dark, not too bright—just dandy. Get ready to walk with a jaunt in your step and a show tune in your head all day.",
-      price: 13,
+      price: 15,
     })
 
 
@@ -200,7 +152,7 @@
   
     cold_brew_1 = Product.create!({
       name: "Three Africas",
-      product_type: "Blend",
+      product_type: "Cold Brew",
       category: "COFFEE",
       description: "Whole Bean Coffee Blends
   
@@ -217,6 +169,36 @@
     ])
 
 
+    cold_brew_2 = Product.create!({
+      name: "New Orleans-Style",
+      product_type: "Cold Brew",
+      category: "COFFEE",
+      description: "Whole Bean Coffee Blend - Cold Brew
+
+      Known affectionately as our NOLA, our New Orleans–Style Iced Coffee is one of our most popular drinks year-round. Casting around for a worthy iced-latte alternative, he stumbled upon the New Orleans tradition of serving sweet, milky coffee cut with chicory. To make our NOLA at home, we provide our whole-bean New Orleans–Style Coffee Blend and Ground Chicory, and a recipe to get you started. You just add the milk, sugar, ice, and a little bit of time.",
+      product_size: "HALF BAG(6OZ)",
+      price: 21,
+    })
+
+
+    cold_brew_2.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/New%20Orleans-Style%20Coffee%20and%20Chicory/New-Orleans-Style-M1-Hero.png"), filename: "cold_brew_21.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/-Blends-M3-Design-Detail1.jpg"), filename: "cold_brew_22.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Brazil%20Chapada%20Diamantina%20Cha%CC%81cara%20Vista%20Alegre/Brazil-Chapada-Diamantina-Chacara-Vista-Alegre-M4-Lifestyle-Desktop.jpg"), filename: "cold_brew_23.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/New%20Orleans-Style%20Coffee%20and%20Chicory/New-Orleans-Style-Hover-M2.jpg"), filename: "cold_brew_24.jpeg"}
+    ])
+
+
+    cold_brew_2 = Product.create!({
+      name: "New Orleans-Style",
+      product_type: "Cold Brew",
+      category: "COFFEE",
+      description: "Whole Bean Coffee Blend - Cold Brew
+
+      Known affectionately as our NOLA, our New Orleans–Style Iced Coffee is one of our most popular drinks year-round. Casting around for a worthy iced-latte alternative, he stumbled upon the New Orleans tradition of serving sweet, milky coffee cut with chicory. To make our NOLA at home, we provide our whole-bean New Orleans–Style Coffee Blend and Ground Chicory, and a recipe to get you started. You just add the milk, sugar, ice, and a little bit of time.",
+      product_size: "HALF BAG(6OZ)",
+      price: 21,
+    })
 
 
 
@@ -225,17 +207,9 @@
 
 
 
-  
-    # blend_6 = Product.create!({
-    #   name: "Three Africas",
-    #   product_type: "Blend",
-    #   category: "COFFEE",
-    #   description: "Whole Bean Coffee Blends
-  
-    #   Playlist is like the pair of adult siblings who, after years of talking over one another at the dinner table, finally get along. Two distinct washed coffees become mild and sweet, with flickers of brightness and whispers of fruit. How nice to know that this coffee blend, like family, finds balance when mixed in the right proportions.",
-    #   product_size: "HALF BAG(6OZ)",
-    #   price: 13,
-    # })
+
+
+ 
   
     
     # espresso_1 = Product.create!({
@@ -260,28 +234,9 @@
     #   price: 14,
     # })
   
-    # espresso_3 = Product.create!({
-    #   name: "17ft Ceiling",
-    #   product_type: "Espresso",
-    #   category: "COFFEE",
-    #   description: "Whole Bean Espresso
-  
-    #   The trick to this sturdy, crema-heavy espresso is the inclusion of organic “fine” Robusta from India. This species of coffee has zero acidity and a ton of body, giving 17ft Ceiling its backbone. Next to Hayes Valley Espresso, which is like consuming a volume of In Search of Lost Time in liquid form, 17ft Ceiling is like flipping through The New Yorker—edifying without being overly taxing.",
-    #   product_size: "HALF BAG(6OZ)",
-    #   price: 13,
-    # })
   
   
-    # espresso_4 = Product.create!({
-    #   name: "Opascope",
-    #   product_type: "Espresso",
-    #   category: "COFFEE",
-    #   description: "Whole Bean Espresso
   
-    #   We’re fond of the opascope—a quaint tool for projecting handwriting and artwork onto larger surfaces—as it conjures the nostalgia of our childhood classrooms. We see it as a tool to amplify careful craftsmanship for everyone to experience and enjoy, just like our Opascope Espresso. Refreshing against a lineup of dense, chocolatey selections, it yields an effervescent shot striped with tropicalia.",
-    #   product_size: "HALF BAG(6OZ)",
-    #   price: 13.50,
-    # })
   
   
     # espresso_5 = Product.create!({
@@ -294,38 +249,6 @@
       
     #   Three 6oz bags of whole-bean coffee",
     #   price: 40,
-    # })
-  
-  
-    # espresso_6 = Product.create!({
-    #   name: "Dandy Espresso",
-    #   product_type: "Espresso",
-    #   category: "COFFEE",
-    #   description: "Whole Bean Espresso
-  
-    #   Alluded to by the name, this balanced espresso makes you feel like everyone around you might break out into a musical number and you may actually join them. With wisps of citrus brightness held against a sweet backdrop of toffee and brown sugar, this espresso is not too dark, not too bright—just dandy. Get ready to walk with a jaunt in your step and a show tune in your head all day.",
-    #   product_size: "HALF BAG(6OZ)",
-    #   price: 13.50,
-    # })
-  
-  
-    # instant_1 = Product.create!({
-    #   name: "Craft Instant Espresso Multiserve",
-    #   product_type: "Espresso",
-    #   category: "COFFEE",
-    #   description: "Make heavenly iced or hot lattes in seconds, anywhere life leads you. At home, your in-laws, an Airbnb getaway—whenever you crave a Blue Bottle cafe-quality espresso drink. Our custom process transforms exceptional craft coffee into aromatic crystals with the dimension and richness of espresso. Consistently delicious lattes couldn’t be simpler to brew. Jar includes 12 servings.",
-    #   price: 25,
-    # })
-  
-  
-    # instant_2 = Product.create!({
-    #   name: "Craft Instant Espresso Single Serve",
-    #   product_type: "Espresso",
-    #   category: "COFFEE",
-    #   description: "Make heavenly iced or hot lattes in seconds, anywhere life leads you. At home, your in-laws’, an Airbnb getaway—whenever you crave a Blue Bottle cafe-quality espresso drink. Our custom process transforms exceptional craft coffee into aromatic crystals with the dimension and richness of espresso. Consistently delicious lattes couldn’t be simpler to brew.
-  
-    #   Includes five individual sachets.",
-    #   price: 13,
     # })
   
   

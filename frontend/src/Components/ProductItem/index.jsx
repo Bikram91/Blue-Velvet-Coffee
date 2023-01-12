@@ -180,10 +180,10 @@ const ProductItem = () => {
               <div className="avg-rating-amount">{calculateAvgRating()}</div>
               <div className="avg-rating-stars">
                 <i className={starStyles[0]} id="star-icon-yellow"></i>
-                <i class={starStyles[1]} id="star-icon-yellow"></i>
-                <i class={starStyles[2]} id="star-icon-yellow"></i>
-                <i class={starStyles[3]} id="star-icon-yellow"></i>
-                <i class={starStyles[4]} id="star-icon-yellow"></i>
+                <i className={starStyles[1]} id="star-icon-yellow"></i>
+                <i className={starStyles[2]} id="star-icon-yellow"></i>
+                <i className={starStyles[3]} id="star-icon-yellow"></i>
+                <i className={starStyles[4]} id="star-icon-yellow"></i>
               </div>
             </div>
             <div className="based-on-reviews">

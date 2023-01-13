@@ -58,8 +58,9 @@
 }
 
 .product_flex{
-  margin-left: 100px;
+  /* margin-left: 100px; */
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 

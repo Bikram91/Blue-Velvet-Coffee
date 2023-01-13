@@ -16,14 +16,15 @@ const Checkout = ({ setShowModal }) => {
   };
 
   return (
-    <div className="checkout_modal flex-col">
+    <div className="checkout_modal">
       <i className="fa-solid fa-xmark" onClick={emptyCart}></i>
-      <div className="flex-col align-center">
-        <h1>Thank you</h1>
+      <div className="checkout_modal_contents">
+        <br /><br />
+        <h1>Thank you!</h1>
         <p className="checkout">
           {"for checking out my website!".toUpperCase()}
         </p>
-        <p>Feel free to check out my links to see another project.</p>
+        <p>Feel free to check out links to see my another projects.</p>
         <div className="checkout_link">
           <Link
             to={{ pathname: "https://github.com/Bikram91" }}
@@ -37,10 +38,11 @@ const Checkout = ({ setShowModal }) => {
           >
             <i className="fa-brands fa-linkedin"></i>
           </Link>
+        <br /><br />
+        <button className="go_main" onClick={emptyCart}>
+          HOME PAGE
+        </button>
         </div>
-        <p className="go_main" onClick={emptyCart}>
-          Home page
-        </p>
       </div>
     </div>
   );

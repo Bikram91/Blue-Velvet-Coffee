@@ -171,23 +171,18 @@
     color: black
   }
   
-  .checkout_modal {
+  /* .checkout_modal {
     width: 40vw;
     text-align: left !important;
   }
+   */
   
-  .checkout_modal .fa-xmark {
-    font-size: 2vw;
-    text-align: right;
-    margin-bottom: 5vh;
-  }
-  
-  .checkout_modal h1 {
+  /* .checkout_modal h1 {
     font-size: 7vw;
     font-weight: 600;
     font-family: var(--reels-font);
     margin-bottom: 5vh;
-  }
+  } */
   
   .checkout_modal .checkout {
     font-size: 1.5vw;
@@ -219,11 +214,16 @@
   }
   
   .checkout_modal .go_main {
-    margin-top: 10vh;
-    font-size: 1.3vw;
-    font-weight: 600;
-    color: var(--purple);
+
+    width: 80%;
+    background-color: #5d5c5c;
+    color: white;
+    height: 40px;
     cursor: pointer;
+
+    letter-spacing: 0.3em;
+    font-weight:bold;
+    margin-bottom: 30px;
   }
 
   .cart_content > * {
@@ -237,4 +237,38 @@
 
   .cart-item-remove-btn {
     margin-left: 30px;
+  }
+
+  .cart_total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkout-btn {
+
+      width: 80%;
+      background-color: #5d5c5c;
+      color: white;
+      height: 40px;
+      cursor: pointer;
+
+      letter-spacing: 0.3em;
+      font-weight:bold;
+      margin-bottom: 30px;
+  }
+
+  .checkout_modal {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .checkout_modal .fa-xmark {
+    margin: 8px 8px;
+    font-size: 1.5vw;
+  }
+
+  .checkout_modal_contents > * {
+    margin: 8px 8px;
+    text-align: center;
   }

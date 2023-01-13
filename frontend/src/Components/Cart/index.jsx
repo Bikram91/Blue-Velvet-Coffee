@@ -85,14 +85,14 @@ const Cart = ({ showModal, setShowModal }) => {
         </div>
       </div>
 
-      <div className="cart_total text-center">
+      <div className="cart_total">
         <h2>Subtotal: ${subtotal()}</h2>
         <button
-          className="btn"
+          className="checkout-btn"
           onClick={() => {
             setShowCheckout(true);
           }}>
-          Checkout
+          CHECKOUT
         </button>
       </div>
       

@@ -189,69 +189,258 @@
     ])
 
 
-    cold_brew_2 = Product.create!({
-      name: "New Orleans-Style",
+    cold_brew_3 = Product.create!({
+      name: "Decaf New Orleans-Style",
       product_type: "Cold Brew",
       category: "COFFEE",
       description: "Whole Bean Coffee Blend - Cold Brew
 
-      Known affectionately as our NOLA, our New Orleans–Style Iced Coffee is one of our most popular drinks year-round. Casting around for a worthy iced-latte alternative, he stumbled upon the New Orleans tradition of serving sweet, milky coffee cut with chicory. To make our NOLA at home, we provide our whole-bean New Orleans–Style Coffee Blend and Ground Chicory, and a recipe to get you started. You just add the milk, sugar, ice, and a little bit of time.",
+
+      For a cafe-quality NOLA, we offer whole beans so you can grind them for the freshest results. We recommend using the Toddy Cold Brew System to brew the coffee concentrate, but you can also make a very good New Orleans–Style Iced Coffee with a large pot and fine-mesh sieve.Each 12-oz bag makes enough coffee to make 8 New Orleans-Style Iced Coffees.",
       product_size: "HALF BAG(6OZ)",
       price: 21,
     })
 
 
+    cold_brew_3.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/New%20Orleans-Style%20Coffee%20and%20Chicory/New-Orleans-Style-M1-Hero.png"), filename: "cold_brew_31.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/-Blends-M3-Design-Detail1.jpg"), filename: "cold_brew_32.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Decaf%20New%20Orleans/Decaf-New-Orleans-Style-M4-Lifestyle-Mobile.jpg"), filename: "cold_brew_33.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/New%20Orleans-Style%20Coffee%20and%20Chicory/Decaf-New-Orleans-Style-Hover-M2.jpg"), filename: "cold_brew_34.jpeg"}
+    ])
+
+    ceramic_1 = Product.create!({
+      name: "Blue Bottle Mug",
+      product_type: "Cermics",
+      category: "Drinkware",
+      description: "You know that mug you reach for most? Perfect handle. Holds the ideal amount of coffee. Looks at home on your kitchen counter, your desk, with both hands curled around it for morning warmth.
+
+      For us, this is that mug. Simple. Sophisticated. Smooth porcelain, soft curves. Designed by our partners at Claska, in Japan. We call this long-standing staple, inspired by our Tokyo cafes, simply “Blue Bottle Mug.” Because, well, it feels like home.",
+      product_size: "",
+      price: 27,
+    })
+
+    ceramic_1.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Claska%20Mug/Blue-Bottle-Claska-Mug-M1-Hero.png"), filename: "drinkware_11.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Claska%20Mug/Blue-Bottle-Claska-Mug-M3-Design-Detail1.jpg"), filename: "drinkware_12.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Claska%20Mug/Blue-Bottle-Claska-Mug-M4-Lifestyle-Desktop.jpg"), filename: "drinkware_13.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Claska%20Mug/Blue-Bottle-Claska-Mug-Hover-M2.jpg"), filename: "drinkware_14.jpeg"}
+    ])
 
 
+    ceramic_2 = Product.create!({
+      name: "Hasami Stackable Latte Cups",
+      product_type: "Cermics",
+      category: "Drinkware",
+      description: "Our new latte cup set, from Japan-based designers Hasami Porcelain, is made for sharing lattes as beautiful and sophisticated as the conversations you enjoy while sipping them. As a stackable set of two, these simple and timeless porcelain cups will be the vessel you reach for every morning for you and your partner.
+
+      Fitting perfectly in the cradle of your palm at just over 6 oz, these cups are cozy as can be, great for a long pour of steamed milk over rich espresso.",
+      product_size: "",
+      price: 36,
+    })
 
 
+    ceramic_2.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Holiday%202022%20Collection/Merch%20/Hasami%20Stackable%20/Hasami-Stackable-Cup-Set-M1-Detail2.jpg"), filename: "drinkware_21.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Holiday%202022%20Collection/Merch%20/Hasami%20Stackable%20/Hasami-Stackable-Cup-Set-M3-Design-Detail-Desktop.jpg"), filename: "drinkware_22.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Holiday%202022%20Collection/Merch%20/Hasami%20Stackable%20/Hasami-Stackable-Cup-Set-M4-Lifestyle-Desktop.jpg"), filename: "drinkware_23.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Holiday%202022%20Collection/Merch%20/Hasami%20Stackable%20/Hasami-Stackable-Cup-Set-M3-Design-Detail-Mobile.jpg"), filename: "drinkware_24.jpeg"}
+    ])
 
 
-
-
- 
-  
-    
-    # espresso_1 = Product.create!({
-    #   name: "Winter Espresso",
-    #   product_type: "Espresso",
-    #   category: "COFFEE",
-    #   description: "Limited-edition espresso with notes of dark chocolate, dried raspberry, and salted toffee
-  
-    #   Our Winter Espresso is rich, complex, and velvety. It is pure luxury, and everyone deserves a moment of luxury this holiday season. A dark, brooding base is colored by bright wisps of tart fruit for a deep cup laced with nuance. This silky coffee makes for a rich experience as you linger over the at-home ritual of grinding beans, tamping grounds, pulling espresso, and savoring every last sip.",
-    #   product_size: "HALF BAG(6OZ)",
-    #   price: 14,
-    # })
-  
-    # espresso_2 = Product.create!({
-    #   name: "Hayes Valley Espresso",
-    #   product_type: "Espresso",
-    #   category: "COFFEE",
-    #   description: "Whole Bean Espresso
-  
-    #   Our darkest espresso was developed for our first brick-and-mortar, a friend’s garage tucked away in San Francisco’s Hayes Valley. Today we serve Hayes Valley espresso in all of our cafes. Lower-toned and minimally bright, a straight shot has voluptuous tawny crema and formidable viscosity. Milk adds romance to Hayes’ brooding aspects, amplifying chocolate notes and adding a smooth, rounded touch.",
-    #   product_size: "HALF BAG(6OZ)",
-    #   price: 14,
-    # })
-  
-  
-  
-  
-  
-  
-    # espresso_5 = Product.create!({
-    #   name: "Espresso Set",
-    #   product_type: "Espresso",
-    #   category: "COFFEE",
-    #   description: "We love espresso for its versatility. Everyone drinks it—the blue collar Italian (ciao, Robusta!) refueling between shifts to the connoisseur leisurely delighting in the layers of flavor. Like all good things in life, espresso is a fleeting moment of revelry.
-  
-    #   While you can use any coffee to make espresso, we created these three blends specifically for this potent brew method. Taste the possibilities of espresso with this set, from brooding to boisterous.
+    ceramic_3 = Product.create!({
+      name: "Hasami Natural Mug with Saucer",
+      product_type: "Cermics",
+      category: "Drinkware",
+      description: "We’ve long admired Hasami Porcelain, founded by Los Angeles–based designer Takuhiro Shinomoto, and the way the ceramicist elevates everyday functional objects.
+      The studio is named in honor of the town of Hasami in the Nagasaki Prefecture of Japan, where traditional ceramics have been crafted since the Edo period four hundred years ago.
       
-    #   Three 6oz bags of whole-bean coffee",
-    #   price: 40,
-    # })
-  
-  
+      
+      In this grainy-textured mug, porcelain and clay come together with a matte finish to create a stackable mug that begs to be touched. The saucer doubles as a lid, which you can use to keep your coffee warm. Holds 13 oz. Microwave- and dishwasher-safe, made in Japan.",
+      product_size: "",
+      price: 40,
+    })
+
+
+    ceramic_3.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Hasami%20Natural%20Mug%20with%20Saucer/Hasami-Natural-Mug-with-Saucer-M1-Component-Detail.png"), filename: "drinkware_31.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Hasami%20Natural%20Mug%20with%20Saucer/Hasami-Natural-Mug-with-Saucer-M3-Design-Detail1.jpg"), filename: "drinkware_32.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Hasami%20Natural%20Mug%20with%20Saucer/Hasami-Natural-Mug-with-Saucer-M4-Lifestyle-Desktop.jpg"), filename: "drinkware_33.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Hasami%20Natural%20Mug%20with%20Saucer/Hasami-Natural-Mug-with-Saucer-Hover.jpg"), filename: "drinkware_34.jpeg"}
+    ])
+
+    ceramic_4 = Product.create!({
+      name: "Blue Bottle Latte Cup",
+      product_type: "Cermics",
+      category: "Drinkware",
+      description: "We’ve long loved Japanese ceramic company Kinto’s Topo line for its playful asymmetry. So we collaborated with Kinto designer Shin Azumi to create these unique ceramics for our Japan cafes. Soon after, we realized the world needed to see them.
+
+      Designed perfectly to uplift the creamy steamed milk of your latte, this 10 ounce cup is paired with an asymmetrical saucer, making it easy to hold with one hand as you sip away. Now you can enjoy your latte in your comfiest chair at home, even stateside.",
+      product_size: "",
+      price: 35,
+    })
+
+
+    ceramic_4.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Latte%20Cup%20and%20Saucer/Blue-Bottle-Latte-Cup-and-Saucer-M1-Hero.png"), filename: "drinkware_41.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Latte%20Cup%20and%20Saucer/Blue-Bottle-Latte-Cup-and-Saucer-M3-Design-Detail1-Desktop.jpg"), filename: "drinkware_42.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Latte%20Cup%20and%20Saucer/Blue-Bottle-Latte-Cup-and-Saucer-M4.jpg-Lifestyle-Desktop.jpg"), filename: "drinkware_43.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Latte%20Cup%20and%20Saucer/Blue-Bottle-Latte-Cup-and-Saucer-Hover.jpg"), filename: "drinkware_44.jpeg"}
+    ])
+
+
+
+    ceramic_5 = Product.create!({
+      name: "Winter Blooms Mug",
+      product_type: "Ceramics",
+      category: "Drinkware",
+      description: "This oversized porcelain mug is inspired by winter’s quiet beauty and the colors of the exquisite arrangements of Sayaka Wada, longtime floral artist for Blue Bottle’s Northern California cafes.
+
+      Its large capacity (14 oz) holds just the right amount for your morning pour over. Also, a delightful vessel for evening herbal tea.
+      
+      Like great coffee, Sayaka’s floral arrangements stop time, a sentiment echoed in the abstract art on this mug. Ideal for fueling winter daydreams.",
+      product_size: "",
+      price: 30,
+    })
+
+
+    ceramic_5.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Winter%20Blooms%20Mug/Winter-Blooms-Mug-M1-Hero.png"), filename: "drinkware_51.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Winter%20Blooms%20Mug/Winter-Blooms-Mug-M3-Design-Detail1-Desktop.jpg"), filename: "drinkware_52.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/blue-bottle-coffee-ceramics-and-mugs_rshjp1.jpg"), filename: "drinkware_53.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Winter%20Blooms%20Mug/Winter-Blooms-Mug-Hover.jpg"), filename: "drinkware_54.jpeg"}
+    ])
+
+
+    travel_1 = Product.create!({
+      name: "MiiR Commuter Cup",
+      product_type: "Travel Mug",
+      category: "Drinkware",
+      description: "Calling all slow sippers: this staff favorite is a lifesaver in or out of the home. Insulated to keep hot coffee hot and cold drinks refreshing.
+
+      Now with a straw in classic blue—perfect for taking your cold brew wherever your day brings you. We’ve also included a traditional no-straw lid, for hot coffee on chilly mornings. Ready for adventures anywhere future you feels called.",
+      product_size: "",
+      price: 34,
+    })
+
+
+    travel_1.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/MiiR%2012-Oz%20Commuter%20Cup%20with%20Straw/MiiR-12-oz-Commuter-Cup-with-Straw-M1-Component-Detail.png"), filename: "drinkware_61.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/MiiR%2012-Oz%20Commuter%20Cup%20with%20Straw/MiiR-12-oz-Commuter-Cup-with-Straw-M3-Design-Detail1.jpg"), filename: "drinkware_62.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/MiiR%2012-Oz%20Commuter%20Cup%20with%20Straw/MiiR-12-oz-Commuter-Cup-with-Straw-M4-Lifestyle-Desktop.jpg"), filename: "drinkware_63.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/MiiR%2012-Oz%20Commuter%20Cup%20(no%20straw,%20different%20lid)/MiiR-12-oz-Commuter-Cup-No-Straw-Hover-M2.jpg"), filename: "drinkware_64.jpeg"}
+    ])
+
+
+
+
+    travel_2 = Product.create!({
+      name: "MiiR 12-Oz Travel Mug",
+      product_type: "Travel Mug",
+      category: "Drinkware",
+      description: "Perfect-sized travel mug. Comfy handle.
+
+      Insulated walls keep liquids hot, even on wintry days—and NOLAs refreshingly cool in summer. Clear, spill-resistant lid lets you see how much you’ve got left to savor.
+      
+      Use for daily coffee at home without those last few sips getting cold. Add to your camping kit for chilly fireside mornings. Tote it on weekend getaways. Hand wash only.",
+      product_size: "",
+      price: 28,
+    })
+
+
+   travel_2.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/MiiR%2012-Oz%20Travel%20Mug%20(Blue)/MiiR-12-oz-Travel-Mug-Blue-M1-Component-Detail.png"), filename: "drinkware_71.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/MiiR%2012-Oz%20Travel%20Mug%20(Blue)/MiiR-12-oz-Travel-Mug-Blue-M3-Design-Detail1.jpg"), filename: "drinkware_72.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Fellow%2016-Oz%20Carter%20Move%20Mug/Fellow-16-Ounce-Carter-Move-Mug-White-M4-Lifestyle-Desktop.jpg"), filename: "drinkware_73.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/MiiR%2012-Oz%20Travel%20Mug%20(Blue)/MiiR-12-oz-Travel-Mug-White-Hover-M2.jpg"), filename: "drinkware_74.jpeg"}
+    ])
+
+
+
+
+    travel_3 = Product.create!({
+      name: "Go Bottle",
+      product_type: "Travel Mug",
+      category: "Drinkware",
+      description: "Introducing our first water bottle, a collaboration with Revomax. Holds 16 ounces of your favorite beverage. Designed to keep cold drinks cold for 36 hours, hot drinks hot for 18 hours, and even carbonated drinks fizzy.
+
+      Our favorite bit: say bye to too-tight or too-loose twist lids. Easily open and close the Go Bottle lid with one hand. Just press and lift. Leak-proof, guaranteed.",
+      product_size: "",
+      price: 40,
+    })
+
+
+    travel_3.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Go%20Bottle/Go-Bottle-M1-Component-Detail.png"), filename: "travel_31.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Go%20Bottle/Go-Bottle-M3-Design-Detail1.jpg"), filename: "travel_32.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Go%20Bottle/Go-Bottle-M4-Lifestyle-Desktop.jpg"), filename: "travel_33.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Go%20Bottle/Go-Bottle-Hover-M2.jpg"), filename: "travel_34.jpeg"}
+    ])
+
+
+
+    glassware_1 = Product.create!({
+      name: "Cafe Cup & Cookie Plate",
+      product_type: "Glassware",
+      category: "Drinkware",
+      description: "Once again, we teamed up with our favorite drinkware craftspeople at Kinto in Japan to add a little extra room in your morning coffee routine for a delightful treat. Our luminous Kinto Cafe Cup is now paired with a maple wood saucer giving you enough room for your favorite coffee-accompanying cookie. Plus, the wide-mouthed cup is perfect for dunking. Yes, we thought of everything.
+
+      A morning coffee and biscotti or an afternoon tea and shortbread—either way, it’s always good to make space for joy in your life.",
+      product_size: "",
+      price: 33,
+    })
+
+
+    glassware_1.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Coffee%20x%20Kinto:%20Cafe%20Cup%20and%20Cookie%20Plate/BBCxKinto-Cafe-Cup-and-Cookie-Plate-M1-Hero.png"), filename: "glassware_11.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Coffee%20x%20Kinto:%20Cafe%20Cup%20and%20Cookie%20Plate/BBCxKinto-Cafe-Cup-and-Cookie-Plate-M3-Design-Detail1-Desktop.jpg"), filename: "glassware_12.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Coffee%20x%20Kinto:%20Cafe%20Cup%20and%20Cookie%20Plate/BBCxKinto-Cafe-Cup-and-Cookie-Plate-M4-Lifestyle-Desktop.jpg"), filename: "glassware_13.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Coffee%20x%20Kinto:%20Cafe%20Cup%20and%20Cookie%20Plate/BBCxKinto-Cafe-Cup-and-Cookie-Plate-Hover-M2.jpg"), filename: "glassware_14.jpeg"}
+    ])
+
+
+    glassware_2 = Product.create!({
+      name: "Walled Glass Set",
+      product_type: "Glassware",
+      category: "Drinkware",
+      description: "Round out your minimalist drinkware collection with this set of two elegant glasses. Double-walled insulation means you can sip as slowly as you like while your coffee stays at just the right temperature, whether you’re drinking an icy cold brew or piping-hot pour over.
+
+      Plus, no condensation equals no puddles on your table. The soft curves of these glasses look lovely, and feel nice to hold, too. From longtime Blue Bottle partner Kinto.",
+      product_size: "",
+      price: 34,
+    })
+
+    glassware_2.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Kinto%20Kronos%20Glass/Kinto-Kronos-Glass-M1-Hero.png"), filename: "glassware_21.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Kinto%20Kronos%20Glass/Kinto-Kronos-Glass-M3-Design-Detail1-Desktop.jpg"), filename: "glassware_22.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Kinto%20Kronos%20Glass/Kinto-Kronos-Glass-M4-Lifestyle-Desktop.jpg"), filename: "glassware_23.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Kinto%20Kronos%20Glass/Kinto-Kronos-Glass-Hover.jpg"), filename: "glassware_24.jpeg"}
+    ])
+
+    
+    glassware_3 = Product.create!({
+      name: "Cafe Cup & Saucer",
+      product_type: "Glassware",
+      category: "Drinkware",
+      description: "Hold a glass cup of coffee and you can see its color variations and luminosity. That’s why we serve pour overs in our cafes in these elegant Kinto mugs, made exclusively for Blue Bottle.
+
+      And although some measure their lives in coffee spoons, we think the better metric is cups of coffee shared with friends. That’s why we’ve bundled this set: two of our classic cafe mugs with two custom warm maple wood saucers, both by Kinto in Japan.
+      
+      Invite some Blue Bottle charm to your at-home coffee dates with this cup and saucer duo.",
+      product_size: "",
+      price: 46,
+    })
+
+
+    glassware_3.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Coffee%20x%20Kinto%20-%20Cafe%20Cup%20+%20Saucer%20for%20Two/BBCxKinto-Cafe-Cup-Saucer-M1-Hero.png"), filename: "glassware_31.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Coffee%20x%20Kinto%20-%20Cafe%20Cup%20+%20Saucer%20for%20Two/BBCxKinto-Cafe-Cup-Saucer-M3-Design-Detail1.jpg"), filename: "glassware_32.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Coffee%20x%20Kinto%20-%20Cafe%20Cup%20+%20Saucer%20for%20Two/BBCxKinto-Cafe-Cup-Saucer-M4-Lifestyle-Desktop.jpg"), filename: "glassware_33.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Coffee%20x%20Kinto%20-%20Cafe%20Cup%20+%20Saucer%20for%20Two/BBCxKinto-Cafe-Cup-Saucer-Hover-M2.jpg"), filename: "glassware_34.jpeg"}
+    ])
+
+
+
     # instant_3 = Product.create!({
     #   name: "Craft Instant Espresso and Cupping Spoon Set",
     #   product_type: "Espresso",
@@ -305,185 +494,6 @@
     #   product_size: "HALF BAG(6OZ)",
     #   price: 27,
     # })
-
-    drinkware_1 = Product.create!({
-      name: "Blue Bottle Mug",
-      product_type: "Cermics",
-      category: "Drinkware",
-      description: "You know that mug you reach for most? Perfect handle. Holds the ideal amount of coffee. Looks at home on your kitchen counter, your desk, with both hands curled around it for morning warmth.
-
-      For us, this is that mug. Simple. Sophisticated. Smooth porcelain, soft curves. Designed by our partners at Claska, in Japan. We call this long-standing staple, inspired by our Tokyo cafes, simply “Blue Bottle Mug.” Because, well, it feels like home.",
-      product_size: "",
-      price: 27,
-    })
-
-
-    drinkware_2 = Product.create!({
-      name: "Hasami Stackable Latte Cups",
-      product_type: "Cermics",
-      category: "Drinkware",
-      description: "Our new latte cup set, from Japan-based designers Hasami Porcelain, is made for sharing lattes as beautiful and sophisticated as the conversations you enjoy while sipping them. As a stackable set of two, these simple and timeless porcelain cups will be the vessel you reach for every morning for you and your partner.
-
-      Fitting perfectly in the cradle of your palm at just over 6 oz, these cups are cozy as can be, great for a long pour of steamed milk over rich espresso.",
-      product_size: "",
-      price: 36,
-    })
-
-
-    drinkware_3 = Product.create!({
-      name: "Kiyosumi Grey Mug",
-      product_type: "Cermics",
-      category: "Drinkware",
-      description: "Our 14 ounce Kiyosumi Grey Mug was inspired by the calm of our Kiyosumi Shirakawa Cafe, in the heart of bustling Tokyo. The grey of the mug was pulled from the exterior of the cafe to bring the same sense of serenity you find there, regardless of the fast-paced city surrounding it.
-
-      While this mug has a soothing, delicate look to it, its porcelain is sturdy enough to withstand the microwave and large enough to hold your morning pour overs, or evening herbal tea.",
-      product_size: "",
-      price: 35,
-    })
-
-
-    drinkware_4 = Product.create!({
-      name: "Hasami Natural Mug with Saucer",
-      product_type: "Cermics",
-      category: "Drinkware",
-      description: "We’ve long admired Hasami Porcelain, founded by Los Angeles–based designer Takuhiro Shinomoto, and the way the ceramicist elevates everyday functional objects.
-      The studio is named in honor of the town of Hasami in the Nagasaki Prefecture of Japan, where traditional ceramics have been crafted since the Edo period four hundred years ago.
-      
-      
-      In this grainy-textured mug, porcelain and clay come together with a matte finish to create a stackable mug that begs to be touched. The saucer doubles as a lid, which you can use to keep your coffee warm. Holds 13 oz. Microwave- and dishwasher-safe, made in Japan.",
-      product_size: "",
-      price: 40,
-    })
-
-    drinkware_5 = Product.create!({
-      name: "Blue Bottle Latte Cup",
-      product_type: "Cermics",
-      category: "Drinkware",
-      description: "We’ve long loved Japanese ceramic company Kinto’s Topo line for its playful asymmetry. So we collaborated with Kinto designer Shin Azumi to create these unique ceramics for our Japan cafes. Soon after, we realized the world needed to see them.
-
-      Designed perfectly to uplift the creamy steamed milk of your latte, this 10 ounce cup is paired with an asymmetrical saucer, making it easy to hold with one hand as you sip away. Now you can enjoy your latte in your comfiest chair at home, even stateside.",
-      product_size: "",
-      price: 35,
-    })
-
-
-
-    drinkware_6 = Product.create!({
-      name: "Winter Blooms Mug",
-      product_type: "Ceramics",
-      category: "Drinkware",
-      description: "This oversized porcelain mug is inspired by winter’s quiet beauty and the colors of the exquisite arrangements of Sayaka Wada, longtime floral artist for Blue Bottle’s Northern California cafes.
-
-      Its large capacity (14 oz) holds just the right amount for your morning pour over. Also, a delightful vessel for evening herbal tea.
-      
-      Like great coffee, Sayaka’s floral arrangements stop time, a sentiment echoed in the abstract art on this mug. Ideal for fueling winter daydreams.",
-      product_size: "",
-      price: 30,
-    })
-
-
-    drinkware_7 = Product.create!({
-      name: "MiiR Commuter Cup",
-      product_type: "Travel Mug",
-      category: "Drinkware",
-      description: "Calling all slow sippers: this staff favorite is a lifesaver in or out of the home. Insulated to keep hot coffee hot and cold drinks refreshing.
-
-      Now with a straw in classic blue—perfect for taking your cold brew wherever your day brings you. We’ve also included a traditional no-straw lid, for hot coffee on chilly mornings. Ready for adventures anywhere future you feels called.",
-      product_size: "",
-      price: 34,
-    })
-
-    drinkware_8 = Product.create!({
-      name: "MiiR 12Oz Travel Mug",
-      product_type: "Travel Mug",
-      category: "Drinkware",
-      description: "Perfect-sized travel mug. Comfy handle.
-
-      Insulated walls keep liquids hot, even on wintry days—and NOLAs refreshingly cool in summer. Clear, spill-resistant lid lets you see how much you’ve got left to savor.
-      
-      Use for daily coffee at home without those last few sips getting cold. Add to your camping kit for chilly fireside mornings. Tote it on weekend getaways. Hand wash only.",
-      product_size: "",
-      price: 34,
-    })
-
-    drinkware_9 = Product.create!({
-      name: "Go Bottle",
-      product_type: "Travel Mug",
-      category: "Drinkware",
-      description: "Introducing our first water bottle, a collaboration with Revomax. Holds 16 ounces of your favorite beverage. Designed to keep cold drinks cold for 36 hours, hot drinks hot for 18 hours, and even carbonated drinks fizzy.
-
-      Our favorite bit: say bye to too-tight or too-loose twist lids. Easily open and close the Go Bottle lid with one hand. Just press and lift. Leak-proof, guaranteed.",
-      product_size: "",
-      price: 40,
-    })
-
-
-
-    drinkware_10 = Product.create!({
-      name: "Cafe Cup & Cookie Plate",
-      product_type: "Glassware",
-      category: "Drinkware",
-      description: "Once again, we teamed up with our favorite drinkware craftspeople at Kinto in Japan to add a little extra room in your morning coffee routine for a delightful treat. Our luminous Kinto Cafe Cup is now paired with a maple wood saucer giving you enough room for your favorite coffee-accompanying cookie. Plus, the wide-mouthed cup is perfect for dunking. Yes, we thought of everything.
-
-      A morning coffee and biscotti or an afternoon tea and shortbread—either way, it’s always good to make space for joy in your life.",
-      product_size: "",
-      price: 33,
-    })
-
-
-    drinkware_11 = Product.create!({
-      name: "Walled Glass Set",
-      product_type: "Glassware",
-      category: "Drinkware",
-      description: "Round out your minimalist drinkware collection with this set of two elegant glasses. Double-walled insulation means you can sip as slowly as you like while your coffee stays at just the right temperature, whether you’re drinking an icy cold brew or piping-hot pour over.
-
-      Plus, no condensation equals no puddles on your table. The soft curves of these glasses look lovely, and feel nice to hold, too. From longtime Blue Bottle partner Kinto.",
-      product_size: "",
-      price: 34,
-    })
-
-    
-    drinkware_12 = Product.create!({
-      name: "Cafe Cup & Saucer",
-      product_type: "Glassware",
-      category: "Drinkware",
-      description: "Hold a glass cup of coffee and you can see its color variations and luminosity. That’s why we serve pour overs in our cafes in these elegant Kinto mugs, made exclusively for Blue Bottle.
-
-      And although some measure their lives in coffee spoons, we think the better metric is cups of coffee shared with friends. That’s why we’ve bundled this set: two of our classic cafe mugs with two custom warm maple wood saucers, both by Kinto in Japan.
-      
-      Invite some Blue Bottle charm to your at-home coffee dates with this cup and saucer duo.",
-      product_size: "",
-      price: 46,
-    })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
 
   puts "Done!"
 # end

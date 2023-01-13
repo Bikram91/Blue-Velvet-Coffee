@@ -34,7 +34,7 @@ const SearchResults = () => {
             {products.length} {products.length === 1 ? "result" : "results"} for
             you search
           </p>
-          <div>
+          <div className="search-product-listing">
             {products?.map((product) => (
               <ProductListing key={product.id} product={product} />
             ))}

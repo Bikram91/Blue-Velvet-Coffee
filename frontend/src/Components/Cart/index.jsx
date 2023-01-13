@@ -75,9 +75,9 @@ const Cart = ({ showModal, setShowModal }) => {
           className="fa-solid fa-xmark"
           onClick={() => setShowModal(false)}
         ></i>
-        <div className="cart_content flex-col align-center">
+        <div className="cart_content">
           <h1>Your Cart</h1>
-          <ul className="flex-col">
+          <ul className="">
             {cartItems.map((cartItem, idx) => (
               <CartItem key={idx} cartItem={cartItem} />
             ))}

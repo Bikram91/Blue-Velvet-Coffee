@@ -8,10 +8,14 @@
 
   .star-checked{
     color: #FFC831;
+    background: none;
+    border:none;
   }
 
   .star-unchecked{
     color: grey;
+    background: none;
+    border: none;
   }
 
 

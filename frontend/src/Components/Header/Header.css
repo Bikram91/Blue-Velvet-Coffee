@@ -43,6 +43,7 @@ header {
     display: flex;
     align-items: center; 
     justify-content: space-between;
+    flex: 1 1 0;
 }
 
 a:hover {
@@ -65,6 +66,10 @@ a:hover {
 
 .shop-btn > img {
     margin-left: 10px;
+}
+
+.logo {
+    flex: 1 1 0;
 }
 
 .logo img {
@@ -150,7 +155,33 @@ a:hover {
     flex-direction: column;
 }
 
+.cart_modal_login {
+    width: 30vw;
+    height: 30vw;
+    overflow: scroll;
+}
 
+.cart_modal_login .fa-xmark {
+    margin: 8px 8px;
+  }
+
+  .cart_modal_login .cart_modal_login_content > * {
+    margin: 8px 8px;
+    text-align: center;
+  }
+
+  .cart_modal_login h1,
+  .cart_modal_login p {
+    font-weight: 600;
+  }
+
+  #cart-login div button {
+    background-color: skyblue;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 32px;
+
+  }
 
 
 

@@ -1,5 +1,5 @@
 .img1 {
-  width: 800px;
+  width: 700px;
 }
 
 .imganddescription {
@@ -215,4 +215,17 @@
 
 .avg-rating-stars {
   margin-left: 5px;
+}
+
+.btn {
+  width: 100%;
+  background-color: #5d5c5c;
+  color: white;
+  height: 40px;
+  cursor: pointer;
+}
+
+.add-to-cart-text {
+  letter-spacing: 0.3em;
+  font-weight: bold;
 }

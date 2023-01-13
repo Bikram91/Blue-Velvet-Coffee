@@ -28,12 +28,9 @@ const CartItem = ({ cartItem }) => {
           <picture>
             <img className="img" src={images} alt={productName} />
           </picture>
-          <div className="cart_item_detail flex-col justify-center">
-            <div className="flex-row justify-between">
+          <div className="cart_item_detail">
+            <div className="cart_item_name">
               <h3>{productName}</h3>
-              <button onClick={() => dispatch(removeCartItem(cartItem.id))}>
-              <i className="fa-solid fa-xmark"></i>
-            </button>
             </div>
             <div className="quantity_price flex-row justify-between">
             <div className="quantity_button flex-row">
@@ -50,7 +47,11 @@ const CartItem = ({ cartItem }) => {
             <p className="cart_subprice">{`$${totalPricePerItem}`}</p>
           </div>
           </div>
+          <button className="cart-item-remove-btn" onClick={() => dispatch(removeCartItem(cartItem.id))}>
+              <i className="fa-solid fa-xmark"></i>
+            </button>
       </div>
+
     </>
   );
 };

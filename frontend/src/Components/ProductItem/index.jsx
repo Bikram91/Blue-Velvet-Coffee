@@ -150,18 +150,19 @@ const ProductItem = () => {
           <button
             className="btn"
             onClick={() => {
+              // setShowModal(true);
               addToCart();
-              setShowModal(true);
             }}
           >
-            Add to Cart
+          <span className="add-to-cart-text">ADD TO CART</span>
           </button>
 
-        
+          <br /><br />
           <div className="reviews-anchor" onClick={() => scrollToReviews()}>
             {/* <i class="fa-regular fa-star"></i> */}
+            <p>Click to see what other people say about this product:&nbsp;</p>
             <Link to="#" className="reviews-anchor-link">
-              <h2>Reviews [{reviews.length}]</h2>
+              <p>Reviews [{reviews.length}]</p>
             </Link>
           </div>
         

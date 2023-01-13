@@ -78,7 +78,7 @@ const Header = () => {
               </nav>
 
               <div>
-                <Link to="#">HOLIDAY</Link>
+                <Link to="/collection/instant">INSTANT</Link>
               </div>
 
               <div className="search">
@@ -145,15 +145,19 @@ const Header = () => {
             {sessionUser ? (
               <Cart showModal={showModal} setShowModal={setShowModal} />
             ) : (
-              <div className="cart_modal_login flex-col">
+              <div className="cart_modal_login">
                 <i
                   className="fa-solid fa-xmark"
                   onClick={() => setShowModal(false)}
                 ></i>
-                <div className="cart_modal_login_content flex-col">
+                <div className="cart_modal_login_content">
                   <h1>Your cart</h1>
+                  <br /><br />
                   <p>Login to see your cart items</p>
-                  <LoginFormModal />
+                  <br /><br />
+                  <div id="cart-login">
+                    <LoginFormModal />
+                  </div>
                 </div>
               </div>
             )}

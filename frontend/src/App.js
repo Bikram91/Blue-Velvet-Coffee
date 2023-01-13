@@ -6,6 +6,9 @@ import ProductItem from "./Components/ProductItem";
 import CoffeeCollection from "./Components/Collections/CoffeeCollection";
 import Drinkware from "./Components/Collections/Drinkware";
 import SearchResults from "./Components/Search/SearchResults";
+import Brewtools from "./Components/Collections/Brewtools";
+import Instant from "./Components/Collections/Instant";
+import SingleOrigin from "./Components/Collections/SingleOrigin";
 
 
 function App() {
@@ -19,11 +22,20 @@ function App() {
         <Route exact path="/products/:productId">
           <ProductItem />
         </Route>
-        <Route path="/collection/coffee">
+        <Route exact path="/collection/coffee">
           <CoffeeCollection />
           </Route>
-          <Route path="/collection/drinkware">
+          <Route exact path="/collection/drinkware">
           <Drinkware />
+        </Route>
+        <Route exact path="/collection/brewtools">
+          <Brewtools />
+        </Route>
+        <Route exact path="/collection/instant">
+          <Instant />
+        </Route>
+        <Route exact path="/collection/singleorigin">
+          <SingleOrigin />
         </Route>
         <Route exact path="/search">
           <SearchResults />

@@ -11,10 +11,12 @@ class Api::ProductsController < ApplicationController
           @products = Product.where("category = 'COFFEE'")
         when 'Drinkware'
           @products = Product.where("category = 'Drinkware'")
-        # when 'Blend'
-        #   @products = Product.where("category = 'Blend'")
-        # when 'Single Origin'
-        #   @products = Product.where("category = 'Single Origin'")
+        when 'Brewtools'
+          @products = Product.where("category = 'Brewtools'")
+        when 'SingleOrigin'
+          @products = Product.where("category = 'SingleOrigin'")
+        when 'Instant'
+          @products = Product.where("category = 'Instant'")
         end
         render :index
     end

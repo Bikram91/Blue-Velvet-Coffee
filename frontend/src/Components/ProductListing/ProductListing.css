@@ -37,17 +37,21 @@
   } */
 
   .img {
-    width: 400px;
-    background-color: rgb(253 251 247)
+    width: 350px;
+    background-color: rgb(253 251 247);
+    padding: 10px;
+    
   }
 
   .product_listing_wrapper p{
     display: flex;
-    
   }
 
   .name{
     /* background-color: rgb(253 251 247); */
     justify-content: center;
   }
+
+ 
+
 

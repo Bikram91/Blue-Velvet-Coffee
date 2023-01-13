@@ -20,6 +20,30 @@
   background-position: 50% 50%; 
 }
 
+.main-image3{
+  background-image: url('../../Assets/CoffeeCollection/brewtools.webp');
+  background-size: 110% 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; 
+}
+
+.main-image4{
+  background-image: url('../../Assets/CoffeeCollection/instant.jpeg');
+  background-size: 110% 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; 
+}
+
+.main-image5{
+  background-image: url('../../Assets/CoffeeCollection/singleorigin.webp');
+  background-size: 110% 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; 
+}
+
 .main-text{
   padding-top: 200px;
     width: 35%;

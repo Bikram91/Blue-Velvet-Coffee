@@ -1,22 +1,28 @@
-form {
-    display: flex;
+.search-form {
+  display: flex;
+}
+
+input[type="search"] {
+  padding: 0px 6px;
+  font-size: 12px;
+  border: solid 1px #ccc;
+}
+
+.search-btn {
+  float: right;
+  padding: 0px 10px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background: #ccc;
 }
 
 
-input[type=search] {
-    padding: 0px 6px;
-    font-size: 12px;
-    border: solid 1px #ccc;;
-  }
-  
- .search-btn {
-    float: right;
-    padding: 0px 10px;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .search-btn:hover {
-    background: #ccc;
-  }
+.search-product-listing {
+  margin-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}

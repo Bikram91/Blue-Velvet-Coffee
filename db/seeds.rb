@@ -438,62 +438,165 @@
       {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Coffee%20x%20Kinto%20-%20Cafe%20Cup%20+%20Saucer%20for%20Two/BBCxKinto-Cafe-Cup-Saucer-M4-Lifestyle-Desktop.jpg"), filename: "glassware_33.jpeg"},
       {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Coffee%20x%20Kinto%20-%20Cafe%20Cup%20+%20Saucer%20for%20Two/BBCxKinto-Cafe-Cup-Saucer-Hover-M2.jpg"), filename: "glassware_34.jpeg"}
     ])
+  
+  
+    single_origin_1 = Product.create!({
+      name: "Winter Single Origin",
+      product_type: "Single Origin",
+      category: "SingleOrigin",
+      description: "Ethiopia Gedeb METAD Natural
+  
+      Every holiday season, we find ourselves craving this single origin. An unintentional annual feature, Ethiopia Gedeb METAD Natural calls to us when the holiday excitement is in full swing. With floral notes of honey and tart blueberry jam this naturally processed coffee boasts an overt fruitiness and complexity that dazzles and enlivens— the perfect accompaniment to all holiday gatherings.",
+      product_size: "HALF BAG(6OZ)",
+      price: 15,
+    })
 
 
+    single_origin_1.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Thailand/Thailand-Mae-Chedi-Anaerobic-Natural-M1-Hero.png"), filename: "single_origin_11.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Thailand/Thailand-Mae-Chedi-Anaerobic-Natural-M4-Origin.jpg"), filename: "single_origin_12.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Thailand/Thailand-Mae-Chedi-Anaerobic-Natural-M5-Lifestyle-Desktop.jpg"), filename: "single_origin_13.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Thailand/Thailand-Mae-Chedi-Anaerobic-Natural-Hover.jpg"), filename: "single_origin_14.jpeg"}
+    ])
 
-    # instant_3 = Product.create!({
-    #   name: "Craft Instant Espresso and Cupping Spoon Set",
-    #   product_type: "Espresso",
-    #   category: "COFFEE",
-    #   description: "A holiday gift set guaranteed to delight the coffee connoisseurs on your list: a 48 gram jar of Craft Instant Espresso for making consistently delicious lattes in seconds, plus our Blue Bottle Cupping Spoon, which doubles as both a perfectly-sized dose measurement and the ideal tasting tool.
+
   
-    #   To bring more ease to the gifting season, this set comes wrapped and ready to spread warmth and deliciousness.",
-    #   price: 14,
-    # })
-  
-  
-    # single_origin_1 = Product.create!({
-    #   name: "Winter Single Origin",
-    #   product_type: "Single Origin",
-    #   category: "COFFEE",
-    #   description: "Ethiopia Gedeb METAD Natural
-  
-    #   Every holiday season, we find ourselves craving this single origin. An unintentional annual feature, Ethiopia Gedeb METAD Natural calls to us when the holiday excitement is in full swing. With floral notes of honey and tart blueberry jam this naturally processed coffee boasts an overt fruitiness and complexity that dazzles and enlivens— the perfect accompaniment to all holiday gatherings.",
-    #   product_size: "HALF BAG(6OZ)",
-    #   price: 15,
-    # })
+    single_origin_2 = Product.create!({
+      name: "Guatemala El Injerto ET-47 Natural",
+      product_type: "Single Origin",
+      category: "SingleOrigin",
+      description: "Producers dedicated to experimenting with specialty coffee may span across the world, but they run in tight circles. This coffee’s rare and elusive ET-47 seeds made their way from Ethiopia to Toño Barrantes, a Costa Rican coffee farmer, who then exchanged them with the Aguirres of El Injerto. From Ethiopia to Costa Rica to Guatemala to you, specialty coffee has a way of bringing us together.",
+      product_size: "HALF BAG(6OZ)",
+      price: 27,
+    })
+
+    single_origin_2.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/_Blends-PLP.png"), filename: "single_origin_21.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/-Coffee-Roastery-Shot-M4-Desktop.jpg"), filename: "single_origin_22.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Brazil%20Samambaia%20Induced%20Fermentation%20Natural/Brazil-Samambaia-Induced-Fermentation-Natural-M4-Lifestyle-Desktop.jpg"), filename: "single_origin_23.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Guatemala%20El%20Injerto%20SL-28/Guatemala-El-Injerto-SL-28-Hover.jpg"), filename: "single_origin_24.jpeg"}
+    ])
   
   
-    # single_origin_2 = Product.create!({
-    #   name: "Guatemala El Injerto ET-47 Natural",
-    #   product_type: "Single Origin",
-    #   category: "COFFEE",
-    #   description: "Producers dedicated to experimenting with specialty coffee may span across the world, but they run in tight circles. This coffee’s rare and elusive ET-47 seeds made their way from Ethiopia to Toño Barrantes, a Costa Rican coffee farmer, who then exchanged them with the Aguirres of El Injerto. From Ethiopia to Costa Rica to Guatemala to you, specialty coffee has a way of bringing us together.",
-    #   product_size: "HALF BAG(6OZ)",
-    #   price: 27,
-    # })
+    single_origin_3 = Product.create!({
+      name: "Colombia Mauricio Shattah Yellow Bourbon",
+      product_type: "Single Origin",
+      category: "SingleOrigin",
+      description: "This coffee is as sweet as a schoolyard crush—fruity, delicate peach sweetness intermingles with thicker, richer caramel, while an aroma of fresh-cut roses ties it all together for a taste of pure, doe-eyed love. Shattah uses anaerobic fermentation combined with honey processing to create a subtle complexity that is responsible for the soft notes of stone fruit and overall balanced composition.",
+      product_size: "HALF BAG(6OZ)",
+      price: 31,
+    })
+
+    single_origin_3.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Colombia%20Mauricio%20Shattah%20Yellow%20Bourbon/Colombia-Mauricio-Shattah-Yellow-Bourbon-M1-Hero.png"), filename: "single_origin_31.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Colombia%20Mauricio%20Shattah%20Yellow%20Bourbon/Colombia-Mauricio-Shattah-Yellow-Bourbon-M3.jpg"), filename: "single_origin_32.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Brazil%20Chapada%20Diamantina%20Cha%CC%81cara%20Vista%20Alegre/Brazil-Chapada-Diamantina-Chacara-Vista-Alegre-M4-Lifestyle-Desktop.jpg"), filename: "single_origin_33.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Colombia%20Mauricio%20Shattah%20Yellow%20Bourbon/Colombia-Mauricio-Shattah-Yellow-Bourbon-Hover.jpg"), filename: "single_origin_34.jpeg"}
+    ])
   
   
-    # single_origin_3 = Product.create!({
-    #   name: "Colombia Mauricio Shattah Yellow Bourbon",
-    #   product_type: "Single Origin",
-    #   category: "COFFEE",
-    #   description: "This coffee is as sweet as a schoolyard crush—fruity, delicate peach sweetness intermingles with thicker, richer caramel, while an aroma of fresh-cut roses ties it all together for a taste of pure, doe-eyed love. Shattah uses anaerobic fermentation combined with honey processing to create a subtle complexity that is responsible for the soft notes of stone fruit and overall balanced composition.",
-    #   product_size: "HALF BAG(6OZ)",
-    #   price: 31,
-    # })
+    single_origin_4 = Product.create!({
+      name: "Costa Rica La Lia Gesha Ethiopia Black Honey",
+      product_type: "Single Origin",
+      category: "SingleOrigin",
+      description: "With every sip of this coffee there is something to explore and learn. The most striking trait is the intense floral aroma that comes from the Gesha and Ethiopian Heirloom cultivars. But complexity develops when the coffee cherry is pulped, leaving a thick layer of mucilage on the coffee bean.
   
-  
-    # single_origin_3 = Product.create!({
-    #   name: "Costa Rica La Lia Gesha Ethiopia Black Honey",
-    #   product_type: "Single Origin",
-    #   category: "COFFEE",
-    #   description: "With every sip of this coffee there is something to explore and learn. The most striking trait is the intense floral aroma that comes from the Gesha and Ethiopian Heirloom cultivars. But complexity develops when the coffee cherry is pulped, leaving a thick layer of mucilage on the coffee bean.
-  
-    #   This technique, known as black honey processing, leaves the coffee with a deep, jammy sweetness balanced by soft citrus and green apple acidity that comes from the coffee’s time spent ferementing in airtight tanks.",
-    #   product_size: "HALF BAG(6OZ)",
-    #   price: 27,
-    # })
+      This technique, known as black honey processing, leaves the coffee with a deep, jammy sweetness balanced by soft citrus and green apple acidity that comes from the coffee’s time spent ferementing in airtight tanks.",
+      product_size: "HALF BAG(6OZ)",
+      price: 27,
+    })
+
+    single_origin_4.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/_Blends-PLP.png"), filename: "single_origin_41.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Costa%20Rica%20Tarrazu%20La%20Lia%20Black%20Honey/Costa-Rica-Tarrazu-La-Lia-Black-Honey-M3.jpg"), filename: "single_origin_42.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Brazil%20Chapada%20Diamantina%20Cha%CC%81cara%20Vista%20Alegre/Brazil-Chapada-Diamantina-Chacara-Vista-Alegre-M4-Lifestyle-Desktop.jpg"), filename: "single_origin_43.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Brazil-Chapada-Diamantina-Chacara-Vista-Alegre-Hover-M2.jpg"), filename: "single_origin_44.jpeg"}
+    ])
+
+    brewtools_1 = Product.create!({
+      name: "Coffee Filters",
+      product_type: "Filters",
+      category: "Brewtools",
+      description: "These bamboo-based paper filters complete our custom pour over system. Use with the Blue Bottle Dripper for a reliably clear and delicious cup of coffee.
+
+      We’ve been meticulously refining the pour over brew method since we launched Blue Bottle in the early 2000s—and this dripper system is the culmination of one focused year of research, four engineers, and 70 prototypes.
+      
+      If you share our pursuit of delightfully nuanced coffee, we developed these custom filters just for you.",
+      product_size: "HALF BAG(6OZ)",
+      price: 6,
+    })
+
+      brewtools_1.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Filters%20PDP/Blue-Bottle-Coffee-Filters-M1-Hero.png"), filename: "brewtool_11.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Coffee%20Filters/Blue-Bottle-Coffee-Filters-M3-Design-Detail1.jpg"), filename: "brewtool_12.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Filters%20PDP/Blue-Bottle-Coffee-Filters-M4-Lifestyle-Desktop.jpg"), filename: "brewtool_13.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Blue%20Bottle%20Filters%20PDP/Blue-Bottle-Coffee-Filters-Hover-M2.jpg"), filename: "brewtool_14.jpeg"}
+    ])
+
+
+    brewtools_2 = Product.create!({
+      name: "Toddy Filter Bag",
+      product_type: "Filters",
+      category: "Brewtools",
+      description: "Twenty compostable paper filter bags for your Toddy Cold Brew system. Easy to clean up. Quick and convenient. Increases draining speed post-brew. Makes your felt filters last longer. Supports brewing up to one pound of coffee at a time.
+
+      The key to crystalline cold brews in the Toddy is its dual filtration system, which relies on a fine felt filter as well as these paper filters.
+      
+      The Toddy Cold Brew System is one of our favorite tools for making our New Orleans-Style Iced Coffee.
+      
+      20 paper filters Made in the United States Compatible with Toddy Cold Brew System",
+      product_size: "HALF BAG(6OZ)",
+      price: 19,
+    })
+
+    brewtools_2.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Toddy%20Paper%20Filter%20Bags/Toddy-Paper-Filter-Bags-M1-Detail.jpg"), filename: "brewtool_21.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Toddy%20Paper%20Filter%20Bags/Toddy-Paper-Filter-Bags-M3-Design-Detail1-Desktop.jpg"), filename: "brewtool_22.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Toddy%20Brew%20System/Toddy-Brew-System-M4-Lifestyle-Desktop.jpg"), filename: "brewtool_23.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Merch%20PDPs/Toddy%20Paper%20Filter%20Bags/Toddy-Paper-Filter-Bags-Hover-M2.jpg"), filename: "brewtool_24.jpeg"}
+    ])
+
+
+    instant_1 = Product.create!({
+      name: "Craft Instant",
+      product_type: "Instant",
+      category: "Instant",
+      description: "Twenty compostable paper filter bags for your Toddy Cold Brew system. Easy to clean up. Quick and convenient. Increases draining speed post-brew. Makes your felt filters last longer. Supports brewing up to one pound of coffee at a time.
+
+      The key to crystalline cold brews in the Toddy is its dual filtration system, which relies on a fine felt filter as well as these paper filters.
+      
+      The Toddy Cold Brew System is one of our favorite tools for making our New Orleans-Style Iced Coffee.
+      
+      20 paper filters Made in the United States Compatible with Toddy Cold Brew System",
+      product_size: "HALF BAG(6OZ)",
+      price: 19,
+    })
+
+
+    instant_1.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Instant%20Multiserve/Multi-Serve-Craft-Instant-Espresso-M1-Hero.png"), filename: "instant_11.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Instant%20Multiserve/Multi-Serve-Craft-Instant-Espresso-M3-Design-Detail-Desktop.jpg"), filename: "instant_12.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Instant%20Multiserve/Multi-Serve-Craft-Instant-Espresso-M4-Lifestyle-Desktop-v2.jpg"), filename: "instant_13.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Instant%20Multiserve/Multi-Serve-Craft-Instant-Espresso-Hover.jpg"), filename: "instant_14.jpeg"}
+    ])
+
+    instant_2 = Product.create!({
+      name: "Instant Espresso",
+      product_type: "Instant",
+      category: "Instant",
+      description: "Make heavenly iced or hot lattes in seconds, anywhere life leads you. At home, your in-laws’, an Airbnb getaway—whenever you crave a Blue Bottle cafe-quality espresso drink. Our custom process transforms exceptional craft coffee into aromatic crystals with the dimension and richness of espresso. Consistently delicious lattes couldn’t be simpler to brew.
+
+      Includes five individual sachets.",
+      product_size: "HALF BAG(6OZ)",
+      price: 21,
+    })
+
+    instant_2.photos.attach([
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Instant%20Single%20Serve/Instant-Sachets-M1-Hero.png"), filename: "instant_21.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Instant%20Single%20Serve/Instant-Sachets-M3-Design-Detail-Desktop_1.jpg"), filename: "instant_22.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Instant%20Launch/M3/m2_narrow_Hero.jpg"), filename: "instant_23.jpeg"},
+      {io: URI.open("https://res.cloudinary.com/hbhhv9rz9/image/upload/f_auto,c_limit,w_3840,q_auto/Coffee/Instant%20Single%20Serve/Instant-Sachets-Hover.jpg"), filename: "instant_24.jpeg"}
+    ])
 
   puts "Done!"
 # end

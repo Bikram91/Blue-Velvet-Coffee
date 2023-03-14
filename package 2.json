@@ -1,0 +1,29 @@
+{
+  "name": "blue_velvet_coffee",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bikram91/Blue-Velvet-Coffee.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bikram91/Blue-Velvet-Coffee/issues"
+  },
+  "homepage": "https://github.com/Bikram91/Blue-Velvet-Coffee#readme",
+  "dependencies": {
+    "lodash.debounce": "^4.0.8"
+  }
+}

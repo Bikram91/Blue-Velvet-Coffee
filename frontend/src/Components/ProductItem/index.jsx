@@ -22,6 +22,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const ProductItem = () => {
   const dispatch = useDispatch();
+  const [errors, setErrors] = useState([]);
   const productId = Number(useParams().productId);
   const user = useSelector((state) => state.session.user);
   const products = useSelector(loadProducts);
@@ -37,6 +38,11 @@ const ProductItem = () => {
     dispatch(fetchReviews(productId));
     //
   }, [dispatch, productId]);
+
+  useEffect(() => {
+    setErrors([])
+    //
+  }, [dispatch, user]);
 
   let product = products.find((product) => product.id === productId);
 
@@ -106,36 +112,42 @@ const ProductItem = () => {
 
   const [showModal, setShowModal] = useState(false);
   const [count, setCount] = useState(1);
+  
 
-  const addToCart = (e) => {
-    if (!user) return null;
-
-    const newItem = {
-      cart_item: {
-        userId: user?.id,
-        productId: productId,
-        productName: product?.name,
-        quantity: count,
-        imageUrl: product?.imgUrls[0],
-        price: product?.price,
-      },
-    };
-
-    let existingItem = cartItems.find(
-      (cartItem) => cartItem.productId == productId
-    );
-
-    if (existingItem) {
-      existingItem.quantity += 1;
-      dispatch(
-        updateCartItem({
-          ...existingItem,
-          quantity: existingItem.quantity,
-        })
+  const addToCart = () => {
+    
+    if (user === null) {
+     setErrors(["Please Login to start shopping"])
+    }else {
+      setErrors([])
+      const newItem = {
+        cart_item: {
+          userId: user?.id,
+          productId: productId,
+          productName: product?.name,
+          quantity: count,
+          imageUrl: product?.imgUrls[0],
+          price: product?.price,
+        },
+      };
+  
+      let existingItem = cartItems.find(
+        (cartItem) => cartItem.productId == productId
       );
-    } else {
-      dispatch(createCartItem(newItem));
+  
+      if (existingItem) {
+        existingItem.quantity += 1;
+        dispatch(
+          updateCartItem({
+            ...existingItem,
+            quantity: existingItem.quantity,
+          })
+        );
+      } else {
+        dispatch(createCartItem(newItem));
+      }
     }
+
   };
 
   if (!product) return null;
@@ -150,12 +162,14 @@ const ProductItem = () => {
           <button
             className="btn"
             onClick={() => {
-              // setShowModal(true);
               addToCart();
             }}
           >
           <span className="add-to-cart-text">ADD TO CART</span>
           </button>
+          <ul className="review-form-errors"> 
+                {errors.map(error => <li key={error}>{error}</li>)}
+            </ul>
 
           <br /><br />
           <div className="reviews-anchor" onClick={() => scrollToReviews()}>

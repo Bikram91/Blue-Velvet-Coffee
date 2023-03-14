@@ -12,24 +12,38 @@ const SearchResults = () => {
   const products = useSelector(loadProducts);
   const { query } = location.state || {};
 
+
+  
   useEffect(() => {
     dispatch(searchProducts(query));
   }, [dispatch, query]);
 
+  
+
   if (Array.isArray(products[0])) return null;
 
   const resultContents = () => {
-    if (products.length === 0) {
+
+    if (products.length === 0){
       return (
         <>
           <h1>Your search - '{query}' - did not match any results </h1>
           <iframe src="https://giphy.com/embed/ES4Vcv8zWfIt2" width="480" height="480" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
         </>
       );
-    } else {
+    } else if (query == ''){
+      return (
+        <>
+          <h1>Your search - '{query}' - did not match any results </h1>
+          <iframe src="https://giphy.com/embed/ES4Vcv8zWfIt2" width="480" height="480" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+        </>
+      );
+      return
+    }else if (products.length !== 0){
       return (
         <div>
-          <h1>Search results for: '{query}'</h1>
+          
+          <h1>Search results for: {query}</h1>
           <p>
             {products.length} {products.length === 1 ? "result" : "results"} for
             you search
@@ -47,7 +61,7 @@ const SearchResults = () => {
   return (
     <section>
         <div>
-        
+
             {resultContents()}
             <Footer/>
         </div>

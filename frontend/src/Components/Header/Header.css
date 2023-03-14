@@ -142,13 +142,16 @@ a:hover {
     border-radius: 10px;
     /* margin-top: 40px; */
     /* top: 15%; */
-    padding-top: 40px;
-    right: 9vh;
-    width: fit-content;
-    line-height: 30px;
-    background-color: rgb(253 251 247);
+    /* padding-top: 40px; */
+    right: 8vh;
+    width:fit-content;
+    line-height: 50px;
+    /* background-color: rgb(253 251 247); */
+    background-color:gainsboro;
     align-items: center;
 }
+
+
 
 .dropdown2:hover .login {
     display: flex;

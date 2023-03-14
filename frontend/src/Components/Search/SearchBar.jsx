@@ -16,6 +16,7 @@ const SearchBar = () => {
       state: { query },
     });
     setQuery("");
+    
   };
 
   return (

@@ -59,6 +59,11 @@ const ReviewIndexItem = ({ review }) => {
     fillStarIcons();
   }, [dispatch, review.rating])
 
+  useEffect(() => {
+    setErrors([])
+    //
+  }, [dispatch, user]);
+
 
   return (
     <>
@@ -75,11 +80,11 @@ const ReviewIndexItem = ({ review }) => {
           </div>
           </div>
         <div className="review-index-item-rating-container">
-          <i class="fa-solid fa-star" id={starIconId[0]}></i>
-          <i class="fa-solid fa-star" id={starIconId[1]}></i>
-          <i class="fa-solid fa-star" id={starIconId[2]}></i>
-          <i class="fa-solid fa-star" id={starIconId[3]}></i>
-          <i class="fa-solid fa-star" id={starIconId[4]}></i>
+          <i className="fa-solid fa-star" id={starIconId[0]}></i>
+          <i className="fa-solid fa-star" id={starIconId[1]}></i>
+          <i className="fa-solid fa-star" id={starIconId[2]}></i>
+          <i className="fa-solid fa-star" id={starIconId[3]}></i>
+          <i className="fa-solid fa-star" id={starIconId[4]}></i>
         </div>
         <div className="review-index-item-title-container">
           {review.title}

@@ -20,6 +20,7 @@ const ReviewEditModal = ({ review, setErrors }) => {
 
   return (
     <>
+      
       <div  className="edit" onClick={() => handleReviewEditClick()}>Edit</div>
       {showEditReviewModal && (
         <Modal onClose={() => setshowEditReviewModal(false)}>

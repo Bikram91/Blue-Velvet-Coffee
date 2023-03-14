@@ -55,7 +55,7 @@ const Header = () => {
   } else {
     sessionLinks = (
         <div className="login">
-          <LoginFormModal />
+          <div className="login-info"><LoginFormModal /></div>
           <SignUpFormModal />
           <Link to="#" onClick={handleDemoLogin}>
             Demo Login

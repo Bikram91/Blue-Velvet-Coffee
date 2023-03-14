@@ -2,12 +2,20 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { Modal } from "../../../context/Modal";
 import ReviewCreateForm from "./ReviewCreateForm";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 
 const ReviewFormModal = ({productId}) => {
+  const dispatch = useDispatch();
 
     const [errors, setErrors] = useState([]);
     const [showReveiwModal, setShowReviewModal] = useState(false);
     let user = useSelector(state => state.session.user);
+
+    useEffect(() => {
+      setErrors([])
+      //
+    }, [dispatch, user]);
 
 
   const handleReviewModalClick = () => {

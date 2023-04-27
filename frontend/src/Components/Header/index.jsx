@@ -146,7 +146,7 @@ const Header = () => {
 
       {showModal && (
         <div className="cart_modal_wrapper">
-          <Modal onClose={() => setShowModal(false)}>
+          <Modal className='modal-width' onClose={() => setShowModal(false)}>
             {sessionUser ? (
               <Cart showModal={showModal} setShowModal={setShowModal} />
             ) : (

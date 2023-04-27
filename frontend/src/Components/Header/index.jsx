@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import * as sessionActions from "../../store/session";
 import { Link } from "react-router-dom";
@@ -51,7 +51,7 @@ const Header = () => {
       <div className="login1">
         {/* <div className="login-info"> */}
           <p>Hello {sessionUser.email}</p>
-          <button onClick={logoutUser}>Log Out</button>
+          <button className="cursor" onClick={logoutUser}>Log Out</button>
         {/* </div> */}
       </div>
     );
@@ -94,7 +94,7 @@ const Header = () => {
 
           <div className="logo">
             <Link to="/">
-              <img src={mainlogo} />
+              <img src={mainlogo} alt="img can't be displayed" />
             </Link>
           </div>
 
@@ -137,7 +137,7 @@ const Header = () => {
                 className="cart-svg"
                 src={cartimg}
                 onClick={() => setShowModal(true)}
-              />
+                alt="img can't be displayed"/>
               <div className="items-quantity">{calculateNumItems()}</div>
             </div>
           </div>

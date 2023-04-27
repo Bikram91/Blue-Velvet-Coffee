@@ -134,6 +134,7 @@ a:hover {
     line-height: 50px;
     background-color: white;
     align-items: center;
+   
 }
 
 .login1 {
@@ -146,6 +147,7 @@ a:hover {
     line-height: 50px;
     background-color: white;
     align-items: center;
+    
 }
 
 .dropdown2:hover .login1 {
@@ -190,6 +192,11 @@ a:hover {
     margin-top: 12px;
     margin-bottom: 12px;
     border: none;
+    cursor: pointer;
+  }
+
+  .cursor{
+    cursor: pointer;
   }
 
   

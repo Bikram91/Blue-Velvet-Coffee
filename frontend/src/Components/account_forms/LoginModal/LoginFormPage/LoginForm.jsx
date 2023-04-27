@@ -45,17 +45,16 @@ const LoginForm = () => {
   return (
     <div className="login-slider">
     <form onSubmit={handleSubmit}>
-      <h2>Sign In</h2>
+    <h3 className="heading">Welcome to BlueVelvetCoffee</h3>
+      <h3>Sign In</h3>
       <ul>
         {errors.map((error) => (<li key={error}>{error}</li>))}
       </ul> 
         <input className="login-field" type="text" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} required/>
         <input className="login-field" type="password" value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} required/>
         <button className="red-btn" type="submit">Log In</button>
-        <Link to="#" id="demo-field" onClick={handleDemoLogin}>Login as Demo User</Link>
-          
-          {/* <Link to="#"></Link> */}
-
+        {/* <Link to="#" id="demo-field" onClick={handleDemoLogin}>Login as Demo User</Link> */}
+        <button className="red-btn" onClick={handleDemoLogin}>Demo User</button>
     </form>
     </div>
   );

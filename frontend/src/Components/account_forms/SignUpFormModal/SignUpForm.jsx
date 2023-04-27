@@ -24,10 +24,9 @@ const SignUpForm = () => {
       ).catch(async (res) => {
         let data;
         try {
-          // .clone() essentially allows you to read the response body twice
           data = await res.clone().json();
         } catch {
-          data = await res.text(); // Will hit this case if the server is down
+          data = await res.text(); 
         }
         if (data?.errors) setErrors(data.errors);
         else if (data) setErrors([data]);
@@ -42,13 +41,14 @@ const SignUpForm = () => {
   return (
     <div className="signup-slider">
       <form onSubmit={handleSubmit}>
-        <h1>Sign Up</h1>
+        <h3 className="heading">Welcome to BlueVelvetCoffee</h3>
+        <h3>Sign Up</h3>
         <ul>{errors.map((error) => (<li key={error}>{error}</li>))}</ul>
-        <input className='signup-field' type="text" value={username} placeholder="username" onChange={(e) => setUsername(e.target.value)} required/>
-        <input className='signup-field' type="text" value={email} placeholder="email" onChange={(e) => setEmail(e.target.value)} required />
-        <input className='signup-field' type="password" value={password} placeholder="password" onChange={(e) => setPassword(e.target.value)} required />
-        <input className='signup-field' type="password" value={confirmPassword} placeholder="confirm password" onChange={(e) => setConfirmPassword(e.target.value)} required />
-        <button className='btn' type="submit">Register now</button>
+        <input className='signup-field' type="text" value={username} placeholder="Username" onChange={(e) => setUsername(e.target.value)} required/>
+        <input className='signup-field' type="text" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
+        <input className='signup-field' type="password" value={password} placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
+        <input className='signup-field' type="password" value={confirmPassword} placeholder="Confirm Password" onChange={(e) => setConfirmPassword(e.target.value)} required />
+        <button className='red-btn1' type="submit">Register now</button>
       </form>
     </div>
   );

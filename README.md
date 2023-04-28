@@ -15,5 +15,7 @@ BlueVelvetCoffee is a website clone of BlueBottleCoffee. User can shop various p
 
 ### User Authentication - LogIn/SignUp/DemoLogin
 
-User can logIn or signup or can login using demologin to explore some extra features.
+User can logIn or signup or can login using demologin to explore some extra features. Backend uses BCrypt to authenticate user details. 
 <img src="./videos/vid.gif" alt="text" width="800"/>
+<img src="./videos/vid2.gif" alt="text" width="800"/>
+

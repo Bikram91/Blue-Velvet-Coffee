@@ -17,5 +17,20 @@ BlueVelvetCoffee is a website clone of BlueBottleCoffee. User can shop various p
 
 User can logIn or signup or can login using demologin to explore some extra features. Backend uses BCrypt to authenticate user details. 
 <img src="./videos/vid.gif" alt="text" width="800"/>
+
+
+Uer can add products of their choice to cart. Adding product to cart is only possible if a user is logged in
 <img src="./videos/vid2.gif" alt="text" width="800"/>
+
+
+User can write/update/Delete review.
+
+<img src="./videos/video.gif" alt="text" width="800"/>
+
+
+Search bar is added to search desired product.
+
+<img src="./videos/video3.gif" alt="text" width="800"/>
+
+
 

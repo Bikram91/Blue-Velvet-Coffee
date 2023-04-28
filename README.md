@@ -17,4 +17,4 @@ BlueVelvetCoffee is a website clone of BlueBottleCoffee. User can shop various p
 
 User can logIn or signup or can login using demologin to explore some extra features.
 
-<img src="./vidoes/vid.mov" alt="text" width="800"/>
+<img src="./vidoes/vid.gif" alt="text" width="800"/>

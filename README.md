@@ -1,24 +1,20 @@
-# README
+# Background
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+BlueVelvetCoffee is a website clone of BlueBottleCoffee. User can shop various products based on their requirement. When you expolore this beautiful website, you will definetly have user-friendly experience. It is designed in such a way that user will not feel lost while using the website. 
 
-Things you may want to cover:
+# Technology
 
-* Ruby version
+* __React__ - An frontend library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.
+* __Redux__ - A predictable, centralized state container for JavaScript apps.
+* __Ruby on Rails__ - Backend framework will boiler plate to develop MVC workflow.
+* __BCrypt__ - User auth package to generate password hash with salt.
+* __Database__ - PostgreSQL.
+* __Other__ AWS for image storage and uploads, Google Map API.
 
-* System dependencies
+# Features
 
-* Configuration
+### User Authentication - LogIn/SignUp/DemoLogin
 
-* Database creation
+User can logIn or signup or can login using demologin to explore some extra features.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<img src="./vidoes/vid.mov" alt="text" width="800"/>

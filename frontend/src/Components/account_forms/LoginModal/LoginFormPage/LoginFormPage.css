@@ -59,8 +59,9 @@
 
 #button {
     border: none;
-    background-color: rgb(253 251 247);
+    background-color: transparent;
     cursor: pointer;
+    color: black;
 }
 
 #button svg {

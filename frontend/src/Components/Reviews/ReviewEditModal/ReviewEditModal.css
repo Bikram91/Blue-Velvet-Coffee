@@ -1,5 +1,13 @@
-.edit{
+.review-item-delete-button1 {
     margin-right: 10px;
     text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: rgb(155, 155, 155);
+    cursor:pointer;
+  }
   
-}
+  .review-item-edit-button1:hover,
+  .review-item-delete-button1:hover {
+    text-decoration: underline;
+    text-decoration-color: #d31334;
+  }
